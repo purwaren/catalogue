@@ -11,7 +11,11 @@
                   <li class="list-inline-item"><a href="#"><i class="fa fa-phone"></i></a></li>
                   <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
                 </ul>
-                <div class="login"><a href="#" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Log In</span></a></div>
+                <?php if (Yii::app()->user->isGuest) { ?>
+                    <div class="login"><a href="<?php echo Yii::app()->createUrl('site/login')?>" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Log In</span></a></div>
+                <?php } else { ?>
+                    <div class="login"><a href="<?php echo Yii::app()->createUrl('site/dashboard')?>" class="login-btn"><i class="fa fa-dashboard"></i><span class="d-none d-md-inline-block">Dashboard</span></a></div>
+                <?php } ?>
                 <ul class="social-custom list-inline">
                   <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
                   <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>

@@ -31,6 +31,20 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
+	public function actionCatalogue() 
+	{
+		$this->layout = '//layouts/shop';
+		$this->render('catalogue');
+	}
+
+	public function actionDashboard() 
+	{
+		$this->layout = '//layouts/column2';
+		if (Yii::app()->user->isGuest)
+		    $this->redirect(array('site/login'));
+		$this->render('dashboard');
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

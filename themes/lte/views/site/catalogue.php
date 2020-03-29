@@ -1,72 +1,23 @@
-<section style="background: url('<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/photogrid.jpg') center center repeat; background-size: cover;" class="relative-positioned">
-    <!-- Carousel Start-->
-    <div class="home-carousel">
-      <div class="dark-mask mask-primary"></div>
-      <div class="container">
-        <div class="homepage owl-carousel">
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5 text-right">
-                <p><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/logo.png" alt="" class="ml-auto"></p>
-                <h1>Multipurpose responsive theme</h1>
-                <p>Business. Corporate. Agency.<br>Portfolio. Blog. E-commerce.</p>
-              </div>
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-homepage.png" alt="" class="img-fluid"></div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-7 text-center"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-mac.png" alt="" class="img-fluid"></div>
-              <div class="col-md-5">
-                <h2>46 HTML pages full of features</h2>
-                <ul class="list-unstyled">
-                  <li>Sliders and carousels</li>
-                  <li>4 Header variations</li>
-                  <li>Google maps, Forms, Megamenu, CSS3 Animations and much more</li>
-                  <li>+ 11 extra pages showing template features</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5 text-right">
-                <h1>Design</h1>
-                <ul class="list-unstyled">
-                  <li>Clean and elegant design</li>
-                  <li>Full width and boxed mode</li>
-                  <li>Easily readable Roboto font and awesome icons</li>
-                  <li>7 preprepared colour variations</li>
-                </ul>
-              </div>
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-easy-customize.png" alt="" class="img-fluid"></div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-easy-code.png" alt="" class="img-fluid"></div>
-              <div class="col-md-5">
-                <h1>Easy to customize</h1>
-                <ul class="list-unstyled">
-                  <li>7 preprepared colour variations.</li>
-                  <li>Easily to change fonts</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row d-flex align-items-center flex-wrap">
+        <div class="col-md-7">
+            <h1 class="h2">Katalog</h1>
         </div>
-      </div>
+        <div class="col-md-5">
+            <ul class="breadcrumb d-flex justify-content-end">
+            <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+            <li class="breadcrumb-item active">Katalog</li>
+            </ul>
+        </div>
+        </div>
     </div>
-    <!-- Carousel End-->
-</section>
-<section>
+</div>
 <div id="content">
     <div class="container">
         <div class="row bar">
         <div class="col-md-12">
-            <div class="heading text-center">
-              <h2>Koleksi Terbaru</h2>
-            </div>
+            <p class="text-muted lead text-center">In our Ladies department we offer wide selection of the best products we have found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss.</p>
             <div class="products-big">
             <div class="row products">
                 <div class="col-lg-3 col-md-4">
@@ -182,4 +133,3 @@
         </div>
     </div>
 </div>
-</section>

@@ -26,8 +26,13 @@
             'items'=>array(
                 array('label'=>'MAIN NAVIGATION','itemOptions'=>array('class'=>'header')),
                 array(
-                    'label'=>'<i class="fa fa-dashboard"></i> <span>Beranda</span>',
+                    'label'=>'<i class="fa fa-link"></i> <span>Ke Website</span>',
                     'url'=>array('/site/index'),
+                    'itemOptions'=>array('class'=>'treeview')
+                ),
+                array(
+                    'label'=>'<i class="fa fa-dashboard"></i> <span>Beranda</span>',
+                    'url'=>array('/site/dashboard'),
                     'itemOptions'=>array('class'=>'treeview')
                 ),
                 array(

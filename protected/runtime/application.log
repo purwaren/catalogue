@@ -8735,3 +8735,555 @@ Stack trace:
 REQUEST_URI=/shop/index.php
 HTTP_REFERER=http://devel.local/shop/index.php/site/login
 ---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product3.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product4.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/banner...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/banner2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product1.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product3.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product1.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product4.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product3.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product1.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/banner...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/banner2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product4.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product3.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/produc...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/product2.jpg
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "index.html" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/index.html
+HTTP_REFERER=http://devel.local/shop/index.php/site/catalogue
+---
+2020/03/28 22:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:41:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:41:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:41:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/28 22:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/28 22:56:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/28 22:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/28 22:56:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:01:52 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.fullname" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/auth/CWebUser.php(146): CComponent->__get('fullname')
+#1 /www/shop/themes/lte/views/layouts/sidebar.php(10): CWebUser->__get('fullname')
+#2 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#3 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', NULL, true)
+#4 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', NULL, true)
+#5 /www/shop/themes/lte/views/layouts/main.php(37): CController->renderPartial('/layouts/sideba...')
+#6 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#7 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#8 /www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#9 /www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<!-- Content Wr...')
+#10 /www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<!-- Content Wr...')
+#11 /www/framework/web/CBaseController.php(214): COutputProcessor->run()
+#12 /www/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 /www/shop/themes/lte/views/layouts/column2.php(23): CBaseController->endContent()
+#14 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#15 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#16 /www/framework/web/CController.php(784): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#17 /www/shop/protected/controllers/SiteController.php(43): CController->render('dashboard')
+#18 /www/framework/web/actions/CInlineAction.php(49): SiteController->actionDashboard()
+#19 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /www/framework/web/CWebApplication.php(282): CController->run('dashboard')
+#23 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#24 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /www/shop/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/shop/index.php/site/dashboard
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:02:57 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.fullname" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/auth/CWebUser.php(146): CComponent->__get('fullname')
+#1 /www/shop/themes/lte/views/layouts/sidebar.php(10): CWebUser->__get('fullname')
+#2 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#3 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', NULL, true)
+#4 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', NULL, true)
+#5 /www/shop/themes/lte/views/layouts/main.php(37): CController->renderPartial('/layouts/sideba...')
+#6 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#7 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#8 /www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#9 /www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<!-- Content Wr...')
+#10 /www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<!-- Content Wr...')
+#11 /www/framework/web/CBaseController.php(214): COutputProcessor->run()
+#12 /www/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 /www/shop/themes/lte/views/layouts/column2.php(23): CBaseController->endContent()
+#14 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#15 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#16 /www/framework/web/CController.php(784): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#17 /www/shop/protected/controllers/SiteController.php(45): CController->render('dashboard')
+#18 /www/framework/web/actions/CInlineAction.php(49): SiteController->actionDashboard()
+#19 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /www/framework/web/CWebApplication.php(282): CController->run('dashboard')
+#23 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#24 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /www/shop/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/shop/index.php/site/dashboard
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:03:01 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.fullname" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/auth/CWebUser.php(146): CComponent->__get('fullname')
+#1 /www/shop/themes/lte/views/layouts/sidebar.php(10): CWebUser->__get('fullname')
+#2 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#3 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', NULL, true)
+#4 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', NULL, true)
+#5 /www/shop/themes/lte/views/layouts/main.php(37): CController->renderPartial('/layouts/sideba...')
+#6 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#7 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#8 /www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#9 /www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<!-- Content Wr...')
+#10 /www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<!-- Content Wr...')
+#11 /www/framework/web/CBaseController.php(214): COutputProcessor->run()
+#12 /www/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 /www/shop/themes/lte/views/layouts/column2.php(23): CBaseController->endContent()
+#14 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#15 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#16 /www/framework/web/CController.php(784): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#17 /www/shop/protected/controllers/SiteController.php(45): CController->render('dashboard')
+#18 /www/framework/web/actions/CInlineAction.php(49): SiteController->actionDashboard()
+#19 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /www/framework/web/CWebApplication.php(282): CController->run('dashboard')
+#23 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#24 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /www/shop/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/shop/index.php/site/dashboard
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:08:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "site" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('site')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('site')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/login')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/site/login
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "site" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('site')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('site')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/login')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/site/login
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:08:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/03/29 00:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "item"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/item
+---
+2020/03/29 09:47:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /www/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /www/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /www/framework/web/CWebApplication.php(282): CController->run('')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/gii
+---
+2020/03/29 09:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---

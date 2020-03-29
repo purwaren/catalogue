@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mode Fashion Group - Online Shop</title>
+    <title>Mode Fashion Group - Katalog Produk</title>
     <meta name="description" content="Online shop for Mode Fashion, ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">

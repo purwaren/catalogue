@@ -1,6 +1,6 @@
 <div class="login-logo">
-    <?php echo CHtml::image(Yii::app()->theme->baseUrl.'/assets/img/logo.png')?><br />
-    <b>MFG Online Shop</b>
+    <a style="color: white" href="<?php echo Yii::app()->baseUrl?>"><?php echo CHtml::image(Yii::app()->theme->baseUrl.'/assets/img/logo.png')?><br />
+    <b>MFG Katalog Online</b></a>
 </div><!-- /.login-logo -->
 <div class="login-box-body">
     <p class="login-box-msg">Silakan login terlebih dahulu</p>

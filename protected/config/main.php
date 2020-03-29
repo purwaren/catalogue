@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Purchase Order',
+	'name'=>'MFG Katalog Online',
 
 	'theme'=>'lte',
 	'language'=>'id',
@@ -29,7 +29,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'bolo',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1','192.168.10.1'),
+			'ipFilters'=>array('127.0.0.1','::1','192.168.33.1'),
 		),
 
 	),
@@ -83,17 +83,6 @@ return array(
 			'assignmentTable'=>'authassignment'
 		),
 
-		// mailer using SwiftMail
-		'mailer'=>array(
-			'class'=>'ext.swiftMailer.SwiftMailer',
-			'mailer' => 'smtp',
-			'security'=>'tls',
-			'host'=>'mail.modefashiongroup.com',
-			'port'=>'587',
-			'username'=>'notification@alulumterpadu.sch.id',
-			'password'=>'3YAjy8Wnq2',
-		),
-
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',
@@ -120,16 +109,5 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'notification@alulumterpadu.sch.id',
-        'store' => array(
-            'name'=>'Kisaran Dept Store',
-            'code'=>'01'
-        ),
-		'koper'=>array(
-		    'omset'=>array(
-		        'debit'=>'10.001.000.000.001', //Kas besar
-                'kredit'=>'40.001.001.000.001' //Penjualan toko mode kisaran
-            )
-        )
 	),
 );
