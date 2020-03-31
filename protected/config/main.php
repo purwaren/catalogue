@@ -19,6 +19,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.models.form.*',
+		'application.models.custom.*',
 		'application.components.*',
 	),
 
@@ -109,5 +110,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
+        'imagePath'=>'images/upload/',
 	),
 );

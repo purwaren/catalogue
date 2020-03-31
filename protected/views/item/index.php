@@ -1,18 +1,18 @@
 <?php
-/* @var $this TransaksiController */
+/* @var $this ItemController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Transaksis',
+	'Item Customs',
 );
 
 $this->menu=array(
-	array('label'=>'Create Transaksi', 'url'=>array('create')),
-	array('label'=>'Manage Transaksi', 'url'=>array('admin')),
+	array('label'=>'Create ItemCustom', 'url'=>array('create')),
+	array('label'=>'Manage ItemCustom', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Transaksis</h1>
+<h1>Item Customs</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
