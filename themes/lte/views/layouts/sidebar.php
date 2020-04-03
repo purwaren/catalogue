@@ -41,6 +41,11 @@
                     'itemOptions'=>array('class'=>'treeview')
                 ),
                 array(
+                    'label'=>'<i class="fa fa-file-excel-o"></i> <span>Kelompok Barang</span>',
+                    'url'=>array('/categories/admin'),
+                    'itemOptions'=>array('class'=>'treeview')
+                ),
+                array(
                     'label'=>'<i class="fa fa-wrench"></i><span>Konfigurasi Sistem</span><i class="fa fa-angle-left pull-right"></i>',
                     'itemOptions'=>array('class'=>'treeview'),
                     'url'=>'#',

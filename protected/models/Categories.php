@@ -6,13 +6,11 @@
  * The followings are the available columns in table 'categories':
  * @property integer $id
  * @property string $code
+ * @property string $cat_group
  * @property string $name
  * @property string $description
  * @property string $created_by
  * @property string $created_at
- *
- * The followings are the available model relations:
- * @property Item[] $items
  */
 class Categories extends CActiveRecord
 {
@@ -32,13 +30,14 @@ class Categories extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('code, name, description, created_by, created_at', 'required'),
+			array('code, cat_group, name, description, created_by, created_at', 'required'),
 			array('code', 'length', 'max'=>3),
+			array('cat_group', 'length', 'max'=>8),
 			array('name', 'length', 'max'=>128),
 			array('created_by', 'length', 'max'=>32),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, code, name, description, created_by, created_at', 'safe', 'on'=>'search'),
+			array('id, code, cat_group, name, description, created_by, created_at', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,7 +49,6 @@ class Categories extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'items' => array(self::HAS_MANY, 'Item', 'cat_id'),
 		);
 	}
 
@@ -62,6 +60,7 @@ class Categories extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'code' => 'Code',
+			'cat_group' => 'Cat Group',
 			'name' => 'Name',
 			'description' => 'Description',
 			'created_by' => 'Created By',
@@ -89,6 +88,7 @@ class Categories extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('code',$this->code,true);
+		$criteria->compare('cat_group',$this->cat_group,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('created_by',$this->created_by,true);

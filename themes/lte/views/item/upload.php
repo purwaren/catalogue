@@ -1,5 +1,5 @@
 <?php
-/* @var $this Controller */
+/* @var $this ItemController */
 /* @var $model ImageUploadForm */
 
 $this->pageTitle = 'Upload Gambar';
@@ -10,5 +10,5 @@ $this->breadcrumbs = array(
 ?>
 <!-- Main content -->
 <section class="content">
-    <?php $this->renderPartial('_formUpload',array('model'=>$model))?>
+    <?php $this->renderPartial('_formUpload',array('model'=>$model,'images'=>$images))?>
 </section><!-- /.content -->

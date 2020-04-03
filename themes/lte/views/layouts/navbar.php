@@ -3,7 +3,7 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 d-md-block d-none">
-              <p>Hubungi kami di Whatsapp +62 8129 2394 934 atau email: sales@modefashiongroup.com</p>
+              <p>Hubungi kami di Whatsapp +62 812-6591-955 atau email: mode.medan@gmail.com</p>
             </div>
             <div class="col-md-6">
               <div class="d-flex justify-content-md-end justify-content-between">
@@ -33,7 +33,7 @@
       <!-- Navbar Start-->
       <header class="nav-holder make-sticky">
         <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
-          <div class="container"><a href="index.html" class="navbar-brand home"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/logo.png" alt="Universal logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Universal logo" class="d-inline-block d-md-none"><span class="sr-only">Universal - go to homepage</span></a>
+          <div class="container"><a href="<?php echo Yii::app()->request->baseUrl ?>" class="navbar-brand home"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/logo-mfg.png" alt="Mode Fashion Group" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Universal logo" class="d-inline-block d-md-none"><span class="sr-only">Universal - go to homepage</span></a>
             <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outlined"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
             <div id="navigation" class="navbar-collapse collapse">
               <ul class="nav navbar-nav ml-auto">
@@ -49,7 +49,7 @@
                     <li>
                       <div class="row">
                         <div class="col-md-6 col-lg-3">
-                          <h5>Home</h5>
+                          <h5>PAKAIAN WANITA</h5>
                           <ul class="list-unstyled mb-3">
                             <li class="nav-item"><a href="index.html" class="nav-link">Option 1: Default Page</a></li>
                             <li class="nav-item"><a href="index2.html" class="nav-link">Option 2: Application</a></li>
@@ -57,20 +57,20 @@
                             <li class="nav-item"><a href="index4.html" class="nav-link">Option 4: Agency</a></li>
                             <li class="nav-item"><a href="index5.html" class="nav-link">Option 5: Portfolio</a></li>
                           </ul>
-                          <h5>About</h5>
+                          <h5>PAKAIAN PRIA</h5>
                           <ul class="list-unstyled mb-3">
                             <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
                             <li class="nav-item"><a href="team.html" class="nav-link">Our team</a></li>
                             <li class="nav-item"><a href="team-member.html" class="nav-link">Team member</a></li>
                             <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                           </ul>
-                          <h5>Marketing</h5>
+                          <h5>PAKAIAN ANAK</h5>
                           <ul class="list-unstyled mb-3">
                             <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
                           </ul>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                          <h5>Portfolio</h5>
+                          <h5>AKSESORIS</h5>
                           <ul class="list-unstyled mb-3">
                             <li class="nav-item"><a href="portfolio-2.html" class="nav-link">2 columns</a></li>
                             <li class="nav-item"><a href="portfolio-no-space-2.html" class="nav-link">2 columns with negative space</a></li>

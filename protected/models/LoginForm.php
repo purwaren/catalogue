@@ -58,10 +58,11 @@ class LoginForm extends CFormModel
 		}
 	}
 
-	/**
-	 * Logs in the user using the given username and password in the model.
-	 * @return boolean whether login is successful
-	 */
+    /**
+     * Logs in the user using the given username and password in the model.
+     * @return boolean whether login is successful
+     * @throws CException
+     */
 	public function login()
 	{
 		if($this->_identity===null)

@@ -16,7 +16,7 @@ class CategoriesCustom extends Categories {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('code, name, created_by, created_at', 'required'),
+            array('code, name, cat_group, created_by, created_at', 'required'),
             array('code', 'length', 'max'=>3),
             array('name', 'length', 'max'=>128),
             array('created_by', 'length', 'max'=>32),
@@ -45,6 +45,7 @@ class CategoriesCustom extends Categories {
     {
         return array(
             'id' => 'ID',
+            'cat_group' => 'Group',
             'code' => 'Kode',
             'name' => 'Nama',
             'description' => 'Keterangan',
@@ -73,5 +74,10 @@ class CategoriesCustom extends Categories {
             $options[$model->code] = $model->code.' ('.strtoupper($model->name).')';
         }
         return $options;
+   }
+
+   public function getGroup() {
+        $options = CreateCategoryForm::getAllGroupOptions();
+        return $options[$this->cat_group];
    }
 }

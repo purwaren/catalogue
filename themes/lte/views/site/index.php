@@ -6,18 +6,18 @@
         <div class="homepage owl-carousel">
           <div class="item">
             <div class="row">
-              <div class="col-md-5 text-right">
+              <div class="col-md-7 text-right">
                 <p><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/logo.png" alt="" class="ml-auto"></p>
                 <h1>Multipurpose responsive theme</h1>
                 <p>Business. Corporate. Agency.<br>Portfolio. Blog. E-commerce.</p>
               </div>
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-homepage.png" alt="" class="img-fluid"></div>
+              <div class="col-md-5"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/banner-1.jpeg" alt="" class="img-fluid"></div>
             </div>
           </div>
           <div class="item">
             <div class="row">
-              <div class="col-md-7 text-center"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-mac.png" alt="" class="img-fluid"></div>
-              <div class="col-md-5">
+              <div class="col-md-5 text-center"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/banner-2.jpeg" alt="" class="img-fluid"></div>
+              <div class="col-md-7">
                 <h2>46 HTML pages full of features</h2>
                 <ul class="list-unstyled">
                   <li>Sliders and carousels</li>
@@ -30,7 +30,7 @@
           </div>
           <div class="item">
             <div class="row">
-              <div class="col-md-5 text-right">
+              <div class="col-md-7 text-right">
                 <h1>Design</h1>
                 <ul class="list-unstyled">
                   <li>Clean and elegant design</li>
@@ -39,13 +39,13 @@
                   <li>7 preprepared colour variations</li>
                 </ul>
               </div>
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-easy-customize.png" alt="" class="img-fluid"></div>
+              <div class="col-md-5"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/banner-3.jpeg" alt="" class="img-fluid"></div>
             </div>
           </div>
           <div class="item">
             <div class="row">
-              <div class="col-md-7"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/template-easy-code.png" alt="" class="img-fluid"></div>
-              <div class="col-md-5">
+              <div class="col-md-5"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/banner-4.jpeg" alt="" class="img-fluid"></div>
+              <div class="col-md-7">
                 <h1>Easy to customize</h1>
                 <ul class="list-unstyled">
                   <li>7 preprepared colour variations.</li>

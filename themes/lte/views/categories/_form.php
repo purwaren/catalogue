@@ -22,6 +22,11 @@
     </div>
     <div class="box-body">
         <div class="form-group">
+            <?php echo $form->labelEx($model,'cat_group'); ?>
+            <?php echo $form->dropDownList($model,'cat_group',CreateCategoryForm::getAllGroupOptions(),array('class'=>'form-control','prompt'=>'Pilih Grup')); ?>
+            <?php echo $form->error($model,'cat_group'); ?>
+        </div>
+        <div class="form-group">
             <?php echo $form->labelEx($model,'code'); ?>
             <?php echo $form->textField($model,'code',array('class'=>'form-control','maxlength'=>128)); ?>
             <?php echo $form->error($model,'code'); ?>

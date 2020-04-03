@@ -5,7 +5,8 @@
 
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl.'/assets/plugins/bootstrap-fileinput/css/fileinput.min.css');
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/assets/plugins/bootstrap-fileinput/fileinput.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScript('form', "
+if (empty($images)) {
+    Yii::app()->clientScript->registerScript('upload', "
     $('#uploadFile').fileinput({
         showCaption: false,
         uploadUrl: '".Yii::app()->createUrl('item/upload', array('id'=>$model->item_id))."',
@@ -13,8 +14,46 @@ Yii::app()->clientScript->registerScript('form', "
         maxFileSize: 2048,
         maxFileCount: 3
     });
-    
-    ", CClientScript::POS_END);
+    ", CClientScript::POS_READY);
+} else {
+    Yii::app()->clientScript->registerScript('upload',"
+        var baseUrl = '".Yii::app()->baseUrl."/';
+        var photos = ".CJSON::encode($images).";
+        var deleteUrl = '".Yii::app()->createUrl('item/deleteImage',array('id'=>$model->item_id))."';
+        var pathPhotos = [];
+        var jsonPhotos = [];
+        for (i=0; i<photos.length; i++) {
+            pathPhotos[i] = baseUrl+photos[i].location;
+            jsonPhotos.push({
+                type: 'image',
+                url: deleteUrl,
+                key: photos[i].id
+            });
+        }
+        
+        $('#uploadFile').fileinput({
+            initialPreview: pathPhotos,
+            initialPreviewAsData: true,
+            initialPreviewFileType: 'image',
+            initialPreviewConfig: jsonPhotos,
+            uploadUrl: '".Yii::app()->createUrl('item/upload',array('id'=>$model->item_id))."',
+            overwriteInitial: false,
+            maxFileSize: 2048,
+            maxFileCount: 3
+        });
+    ", CClientScript::POS_READY);
+
+    Yii::app()->clientScript->registerScript('uploaded',"
+        $('#uploadFile').on('filepredelete', function() {
+            var abort = true;
+            if (confirm('Anda yakin menghapus foto ini?')) {
+                abort = false;
+            }
+            return abort;
+        });
+    ",CClientScript::POS_END);
+}
+
 ?>
 
 <div class="form">
@@ -43,7 +82,7 @@ Yii::app()->clientScript->registerScript('form', "
                     <div class="input-group input-group-sm">
                         <?php echo $form->hiddenField($model,'item_id',array('class'=>'form-control','placeholder'=>'Foto Barang')); ?>
                         <span class="input-group-btn">
-                        <input type="file" multiple class="file-loading" id="uploadFile" accept="image/*"/>
+                        <input type="file" multiple class="file-loading" id="uploadFile" />
                     </span>
                     </div>
                     <?php echo $form->error($model,'images'); ?>
@@ -51,7 +90,7 @@ Yii::app()->clientScript->registerScript('form', "
 
             </div><!-- /.box-body -->
             <div class="box-footer">
-                <?php echo CHtml::linkButton('Kembali',array('class'=>'btn btn-danger','href'=>array('users/admin'))); ?>
+                <?php echo CHtml::linkButton('Kembali',array('class'=>'btn btn-danger','href'=>array('item/admin'))); ?>
             </div>
     </div><!-- /.box -->
     <?php $this->endWidget(); ?>

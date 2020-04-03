@@ -9287,3 +9287,670 @@ Stack trace:
 REQUEST_URI=/shop/index.php/img/logo-small.png
 HTTP_REFERER=http://devel.local/shop/index.php/
 ---
+2020/03/29 10:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "img/logo-small.png"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('img/logo-small....')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/
+---
+2020/03/29 10:20:50 [error] [exception.CException] exception 'CException' with message 'Properti "ItemCustom.username" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(145): CComponent->__get('username')
+#1 /www/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('username')
+#2 /www/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(ItemCustom), 'username')
+#3 /www/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(ItemCustom), 'username', Array)
+#4 /www/framework/web/widgets/CActiveForm.php(792): CHtml::activeTextField(Object(ItemCustom), 'username', Array)
+#5 /www/shop/themes/lte/views/item/_form.php(39): CActiveForm->textField(Object(ItemCustom), 'username', Array)
+#6 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#7 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#8 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#9 /www/shop/themes/lte/views/item/create.php(11): CController->renderPartial('_form', Array)
+#10 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#11 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#12 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#13 /www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /www/shop/protected/controllers/ItemController.php(79): CController->render('create', Array)
+#15 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#16 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /www/framework/web/CController.php(291): CFilterChain->run()
+#23 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#26 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#27 /www/shop/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/site/dashboard
+---
+2020/03/29 10:33:56 [error] [php] include(CategoriesCustom.php): failed to open stream: No such file or directory (/www/framework/YiiBase.php:432)
+Stack trace:
+#0 /www/shop/themes/lte/views/item/_form.php(70): spl_autoload_call()
+#1 /www/framework/web/CBaseController.php(126): require()
+#2 /www/framework/web/CBaseController.php(95): ItemController->renderInternal()
+#3 /www/framework/web/CController.php(869): ItemController->renderFile()
+#4 /www/shop/themes/lte/views/item/create.php(11): ItemController->renderPartial()
+#5 /www/framework/web/CBaseController.php(126): require()
+#6 /www/framework/web/CBaseController.php(95): ItemController->renderInternal()
+#7 /www/framework/web/CController.php(869): ItemController->renderFile()
+#8 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#9 /www/shop/protected/controllers/ItemController.php(79): ItemController->render()
+#10 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#11 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#13 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#16 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /www/framework/web/CController.php(291): CFilterChain->run()
+#18 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#19 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#20 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/create
+in /www/shop/themes/lte/views/item/_form.php (70)
+in /www/shop/themes/lte/views/item/create.php (11)
+in /www/shop/protected/controllers/ItemController.php (79)
+2020/03/29 10:34:57 [error] [exception.CException] exception 'CException' with message 'Properti "ItemCustom.cat_id" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(145): CComponent->__get('cat_id')
+#1 /www/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('cat_id')
+#2 /www/framework/web/helpers/CHtml.php(1981): CHtml::resolveValue(Object(ItemCustom), 'cat_id')
+#3 /www/framework/web/widgets/CActiveForm.php(914): CHtml::activeDropDownList(Object(ItemCustom), 'cat_id', Array, Array)
+#4 /www/shop/themes/lte/views/item/_form.php(70): CActiveForm->dropDownList(Object(ItemCustom), 'cat_id', Array, Array)
+#5 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#6 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#7 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#8 /www/shop/themes/lte/views/item/create.php(11): CController->renderPartial('_form', Array)
+#9 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#10 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#11 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#12 /www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /www/shop/protected/controllers/ItemController.php(79): CController->render('create', Array)
+#14 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#15 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /www/framework/web/CController.php(291): CFilterChain->run()
+#22 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#25 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#26 /www/shop/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/site/dashboard
+---
+2020/03/29 21:43:43 [error] [exception.CException] exception 'CException' with message 'Properti "ItemCustom.images" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(145): CComponent->__get('images')
+#1 /www/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('images')
+#2 /www/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(ItemCustom), 'images')
+#3 /www/framework/web/helpers/CHtml.php(1788): CHtml::activeInputField('hidden', Object(ItemCustom), 'images', Array)
+#4 /www/framework/web/widgets/CActiveForm.php(823): CHtml::activeHiddenField(Object(ItemCustom), 'images', Array)
+#5 /www/shop/themes/lte/views/item/_form.php(57): CActiveForm->hiddenField(Object(ItemCustom), 'images', Array)
+#6 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#7 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#8 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#9 /www/shop/themes/lte/views/item/create.php(11): CController->renderPartial('_form', Array)
+#10 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#11 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#12 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#13 /www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /www/shop/protected/controllers/ItemController.php(79): CController->render('create', Array)
+#15 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#16 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /www/framework/web/CController.php(291): CFilterChain->run()
+#23 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#26 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#27 /www/shop/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/site/login
+---
+2020/03/30 03:13:40 [error] [exception.CException] exception 'CException' with message 'Properti "ItemUploadForm.description" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/helpers/CHtml.php(2728): CComponent->__get('description')
+#1 /www/framework/web/helpers/CHtml.php(1833): CHtml::resolveValue(Object(ItemUploadForm), 'description')
+#2 /www/framework/web/widgets/CActiveForm.php(853): CHtml::activeTextArea(Object(ItemUploadForm), 'description', Array)
+#3 /www/shop/themes/lte/views/item/_form.php(66): CActiveForm->textArea(Object(ItemUploadForm), 'description', Array)
+#4 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#5 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#6 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#7 /www/shop/themes/lte/views/item/create.php(11): CController->renderPartial('_form', Array)
+#8 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#9 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#10 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#11 /www/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /www/shop/protected/controllers/ItemController.php(72): CController->render('create', Array)
+#13 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#14 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /www/framework/web/CController.php(291): CFilterChain->run()
+#21 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#24 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /www/shop/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/site/login
+---
+2020/03/31 07:57:18 [warning] [application] Gagal mengeset atribut unsafe "sup_code" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (65)
+in /www/shop/index.php (13)
+2020/03/31 07:57:18 [error] [exception.CException] exception 'CException' with message 'Properti "ItemForm.images" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/validators/CRequiredValidator.php(58): CComponent->__get('images')
+#1 /www/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(ItemForm), 'images')
+#2 /www/framework/base/CModel.php(159): CValidator->validate(Object(ItemForm), NULL)
+#3 /www/shop/protected/models/form/ItemForm.php(35): CModel->validate()
+#4 /www/shop/protected/controllers/ItemController.php(66): ItemForm->save()
+#5 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#6 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /www/framework/web/CController.php(291): CFilterChain->run()
+#13 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#16 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /www/shop/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/item/create
+---
+2020/03/31 07:57:30 [warning] [application] Gagal mengeset atribut unsafe "sup_code" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (65)
+in /www/shop/index.php (13)
+2020/03/31 07:58:00 [warning] [application] Gagal mengeset atribut unsafe "sup_code" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (65)
+in /www/shop/index.php (13)
+2020/03/31 07:58:19 [warning] [application] Gagal mengeset atribut unsafe "sup_code" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (65)
+in /www/shop/index.php (13)
+2020/03/31 08:00:47 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (39)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/03/31 08:02:07 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (39)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/03/31 08:02:07 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price' at row 1. Statement SQL yang dijalankan: INSERT INTO `item` (`created_at`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /www/shop/protected/models/form/ItemForm.php (42)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/03/31 08:02:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price' at row 1. The SQL statement executed was: INSERT INTO `item` (`created_at`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/ItemForm.php(42): CActiveRecord->save()
+#3 /www/shop/protected/controllers/ItemController.php(66): ItemForm->save()
+#4 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionCreate()
+#5 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/create')
+#15 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /www/shop/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/shop/index.php/item/create
+HTTP_REFERER=http://devel.local/shop/index.php/item/create
+---
+2020/03/31 08:03:23 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (39)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/03/31 08:03:23 [error] [exception.CException] exception 'CException' with message 'Properti "ImageUploadForm.item_code" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/helpers/CHtml.php(2728): CComponent->__get('item_code')
+#1 /www/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(ImageUploadForm), 'item_code')
+#2 /www/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(ImageUploadForm), 'item_code', Array)
+#3 /www/framework/web/widgets/CActiveForm.php(792): CHtml::activeTextField(Object(ImageUploadForm), 'item_code', Array)
+#4 /www/shop/themes/lte/views/item/_form.php(48): CActiveForm->textField(Object(ImageUploadForm), 'item_code', Array)
+#5 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#6 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#7 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#8 /www/shop/themes/lte/views/item/upload.php(12): CController->renderPartial('_form', Array)
+#9 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#10 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#11 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#12 /www/framework/web/CController.php(782): CController->renderPartial('upload', Array, true)
+#13 /www/shop/protected/controllers/ItemController.php(192): CController->render('upload', Array)
+#14 [internal function]: ItemController->actionUpload('1')
+#15 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#16 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#17 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /www/framework/web/CController.php(291): CFilterChain->run()
+#24 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#26 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#27 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#28 /www/shop/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/shop/index.php/item/upload/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/create
+---
+2020/03/31 08:04:51 [error] [exception.CException] exception 'CException' with message 'Properti "ImageUploadForm.item_code" tidak didefinisikan.' in /www/framework/base/CComponent.php:130
+Stack trace:
+#0 /www/framework/web/helpers/CHtml.php(2728): CComponent->__get('item_code')
+#1 /www/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(ImageUploadForm), 'item_code')
+#2 /www/framework/web/helpers/CHtml.php(1788): CHtml::activeInputField('hidden', Object(ImageUploadForm), 'item_code', Array)
+#3 /www/framework/web/widgets/CActiveForm.php(823): CHtml::activeHiddenField(Object(ImageUploadForm), 'item_code', Array)
+#4 /www/shop/themes/lte/views/item/_formUpload.php(44): CActiveForm->hiddenField(Object(ImageUploadForm), 'item_code', Array)
+#5 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#6 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#7 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#8 /www/shop/themes/lte/views/item/upload.php(13): CController->renderPartial('_formUpload', Array)
+#9 /www/framework/web/CBaseController.php(126): require('/www/shop/theme...')
+#10 /www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/www/shop/theme...', Array, true)
+#11 /www/framework/web/CController.php(869): CBaseController->renderFile('/www/shop/theme...', Array, true)
+#12 /www/framework/web/CController.php(782): CController->renderPartial('upload', Array, true)
+#13 /www/shop/protected/controllers/ItemController.php(192): CController->render('upload', Array)
+#14 [internal function]: ItemController->actionUpload('1')
+#15 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#16 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#17 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /www/framework/web/CController.php(291): CFilterChain->run()
+#24 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#26 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#27 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#28 /www/shop/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/shop/index.php/item/upload/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/create
+---
+2020/03/31 08:33:13 [error] [php] Undefined variable: data (/www/shop/themes/lte/views/item/admin.php:52)
+Stack trace:
+#0 /www/framework/web/CController.php(869): ItemController->renderFile()
+#1 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#2 /www/shop/protected/controllers/ItemController.php(139): ItemController->render()
+#3 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionAdmin()
+#4 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#6 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#9 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#12 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#13 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/admin
+in /www/shop/themes/lte/views/item/admin.php (52)
+in /www/shop/protected/controllers/ItemController.php (139)
+in /www/shop/index.php (13)
+2020/03/31 08:33:26 [error] [php] Undefined variable: data (/www/shop/themes/lte/views/item/admin.php:52)
+Stack trace:
+#0 /www/framework/web/CController.php(869): ItemController->renderFile()
+#1 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#2 /www/shop/protected/controllers/ItemController.php(139): ItemController->render()
+#3 /www/framework/web/actions/CInlineAction.php(49): ItemController->actionAdmin()
+#4 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#6 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#9 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#12 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#13 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/admin
+in /www/shop/themes/lte/views/item/admin.php (52)
+in /www/shop/protected/controllers/ItemController.php (139)
+in /www/shop/index.php (13)
+2020/03/31 08:39:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Request anda tidak valid' in /www/framework/web/CController.php:336
+Stack trace:
+#0 /www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#9 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#10 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /www/shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/shop/index.php/item/upload
+HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
+---
+2020/03/31 08:41:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Request anda tidak valid' in /www/framework/web/CController.php:336
+Stack trace:
+#0 /www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#9 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#10 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /www/shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/shop/index.php/item/upload/
+HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
+---
+2020/03/31 08:41:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Request anda tidak valid' in /www/framework/web/CController.php:336
+Stack trace:
+#0 /www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#9 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#10 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /www/shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/shop/index.php/item/upload/
+HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
+---
+2020/03/31 08:47:31 [error] [php] move_uploaded_file(images/upload/img_20200331084731_1854.jpg): failed to open stream: No such file or directory (/www/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /www/shop/protected/controllers/ItemController.php(185): ImageUploadForm->save()
+#1 unknown(0): ItemController->actionUpload()
+#2 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#6 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#9 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#12 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#13 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/upload/1
+in /www/shop/protected/models/form/ImageUploadForm.php (27)
+in /www/shop/protected/controllers/ItemController.php (185)
+in /www/shop/index.php (13)
+2020/04/03 06:22:58 [error] [exception.CException] exception 'CException' with message 'CategoriesController tidak bisa menemukan view "index" yang di-request.' in /www/framework/web/CController.php:878
+Stack trace:
+#0 /www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /www/shop/protected/controllers/CategoriesController.php(121): CController->render('index', Array)
+#2 /www/framework/web/actions/CInlineAction.php(49): CategoriesController->actionIndex()
+#3 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/framework/web/CWebApplication.php(282): CController->run('')
+#12 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('categories')
+#13 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /www/shop/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/shop/index.php/categories
+---
+2020/04/03 06:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "category"' in /www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#1 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /www/shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/shop/index.php/category
+---
+2020/04/03 06:23:28 [error] [php] include(CreateCategoryForm.php): failed to open stream: No such file or directory (/www/framework/YiiBase.php:432)
+Stack trace:
+#0 /www/shop/protected/controllers/CategoriesController.php(58): spl_autoload_call()
+#1 /www/framework/web/actions/CInlineAction.php(49): CategoriesController->actionCreate()
+#2 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /www/framework/web/filters/CFilterChain.php(133): CategoriesController->runAction()
+#4 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /www/framework/web/filters/CInlineFilter.php(58): CategoriesController->filterAccessControl()
+#7 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /www/framework/web/CController.php(291): CFilterChain->run()
+#9 /www/framework/web/CController.php(265): CategoriesController->runActionWithFilters()
+#10 /www/framework/web/CWebApplication.php(282): CategoriesController->run()
+#11 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/categories/create
+in /www/shop/protected/controllers/CategoriesController.php (58)
+in /www/shop/index.php (13)
+2020/04/03 06:33:46 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:33:46 [warning] [application] Gagal mengeset atribut unsafe "cat_group" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:33:46 [warning] [application] Gagal mengeset atribut unsafe "description" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:33:46 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[HY000]: General error: 1364 Field 'cat_group' doesn't have a default value. Statement SQL yang dijalankan: INSERT INTO `categories` (`code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, NOW()).
+in /www/shop/protected/models/form/CreateCategoryForm.php (43)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:33:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[HY000]: General error: 1364 Field 'cat_group' doesn't have a default value. The SQL statement executed was: INSERT INTO `categories` (`code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, NOW())' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/CreateCategoryForm.php(43): CActiveRecord->save()
+#3 /www/shop/protected/controllers/CategoriesController.php(66): CreateCategoryForm->save()
+#4 /www/framework/web/actions/CInlineAction.php(49): CategoriesController->actionCreate()
+#5 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('categories/crea...')
+#15 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /www/shop/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/shop/index.php/categories/create
+HTTP_REFERER=http://devel.local/shop/index.php/categories/create
+---
+2020/04/03 06:34:08 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:08 [warning] [application] Gagal mengeset atribut unsafe "cat_group" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:08 [warning] [application] Gagal mengeset atribut unsafe "description" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:08 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[HY000]: General error: 1364 Field 'cat_group' doesn't have a default value. Statement SQL yang dijalankan: INSERT INTO `categories` (`code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, NOW()).
+in /www/shop/protected/models/form/CreateCategoryForm.php (43)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[HY000]: General error: 1364 Field 'cat_group' doesn't have a default value. The SQL statement executed was: INSERT INTO `categories` (`code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, NOW())' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/CreateCategoryForm.php(43): CActiveRecord->save()
+#3 /www/shop/protected/controllers/CategoriesController.php(66): CreateCategoryForm->save()
+#4 /www/framework/web/actions/CInlineAction.php(49): CategoriesController->actionCreate()
+#5 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('categories/crea...')
+#15 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /www/shop/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/shop/index.php/categories/create
+HTTP_REFERER=http://devel.local/shop/index.php/categories/create
+---
+2020/04/03 06:34:35 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:35 [warning] [application] Gagal mengeset atribut unsafe "description" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:35 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[HY000]: General error: 1364 Field 'description' doesn't have a default value. Statement SQL yang dijalankan: INSERT INTO `categories` (`cat_group`, `code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3, NOW()).
+in /www/shop/protected/models/form/CreateCategoryForm.php (43)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:34:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[HY000]: General error: 1364 Field 'description' doesn't have a default value. The SQL statement executed was: INSERT INTO `categories` (`cat_group`, `code`, `name`, `created_by`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3, NOW())' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/CreateCategoryForm.php(43): CActiveRecord->save()
+#3 /www/shop/protected/controllers/CategoriesController.php(66): CreateCategoryForm->save()
+#4 /www/framework/web/actions/CInlineAction.php(49): CategoriesController->actionCreate()
+#5 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('categories/crea...')
+#15 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /www/shop/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/shop/index.php/categories/create
+HTTP_REFERER=http://devel.local/shop/index.php/categories/create
+---
+2020/04/03 06:35:38 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 06:35:38 [warning] [application] Gagal mengeset atribut unsafe "description" dari kelas "CategoriesCustom".
+in /www/shop/protected/models/form/CreateCategoryForm.php (40)
+in /www/shop/protected/controllers/CategoriesController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 07:27:12 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (39)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 07:27:12 [error] [exception.CException] exception 'CException' with message 'Images dan behaviornya tidak memiliki method ataupun closure bernama "findAllByItemId"' in /www/framework/base/CComponent.php:266
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(227): CComponent->__call('findAllByItemId', Array)
+#1 /www/shop/protected/controllers/ItemController.php(196): CActiveRecord->__call('findAllByItemId', Array)
+#2 /www/shop/protected/controllers/ItemController.php(196): Images->findAllByItemId('2')
+#3 [internal function]: ItemController->actionUpload('2')
+#4 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#5 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#6 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /www/framework/web/CController.php(291): CFilterChain->run()
+#13 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#15 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#16 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /www/shop/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/shop/index.php/item/upload/2
+HTTP_REFERER=http://devel.local/shop/index.php/item/create
+---
+2020/04/03 09:56:02 [error] [exception.CException] exception 'CException' with message 'Images dan behaviornya tidak memiliki method ataupun closure bernama "findAllByItemId"' in /www/framework/base/CComponent.php:266
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(227): CComponent->__call('findAllByItemId', Array)
+#1 /www/shop/protected/controllers/ItemController.php(196): CActiveRecord->__call('findAllByItemId', Array)
+#2 /www/shop/protected/controllers/ItemController.php(196): Images->findAllByItemId('1')
+#3 [internal function]: ItemController->actionUpload('1')
+#4 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#5 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#6 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /www/framework/web/CController.php(291): CFilterChain->run()
+#13 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /www/framework/web/CWebApplication.php(282): CController->run('upload')
+#15 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/upload')
+#16 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /www/shop/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/shop/index.php/item/upload/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/admin
+---
+2020/04/03 10:09:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "deleteImage" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('deleteImage')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('deleteImage')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/deleteImag...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/item/deleteImage/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
+---

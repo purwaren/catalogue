@@ -28,6 +28,10 @@ $this->breadcrumbs = array(
                         'header'=>'No',
                         'value'=>'$this->grid->dataProvider->pagination->currentPage*$this->grid->dataProvider->pagination->pageSize+$row+1'
                     ),
+                    array(
+                        'name'=>'cat_group',
+                        'value'=>'$data->getGroup()'
+                    ),
                     'code',
                     'name',
                     'created_at',

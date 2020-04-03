@@ -46,8 +46,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-              <h4 class="h6">About Us</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <h4 class="h6">Tentang Kami</h4>
+              <p>Mode Fashion Group merupakan retailer terbesar dan terlengkap untuk kebutuhan fashion Anda</p>
               <hr>
               <h4 class="h6">Join Our Monthly Newsletter</h4>
               <form>

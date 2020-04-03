@@ -192,8 +192,11 @@ class ItemController extends Controller
         }
 	    else
         {
+            //load images for this item
+            $images = ImagesCustom::model()->findAllByItemId($id);
             $this->render('upload',array(
-                'model'=>$model
+                'model'=>$model,
+                'images'=>$images
             ));
         }
     }
