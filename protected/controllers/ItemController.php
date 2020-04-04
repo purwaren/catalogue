@@ -31,6 +31,10 @@ class ItemController extends Controller
 				'actions'=>array('index','view','create','update','admin','delete','upload', 'create', 'deleteImage'),
 				'users'=>array('@'),
 			),
+			array('allow',
+                'actions'=>array('detail'),
+                'users'=>array('*'),
+            ),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
@@ -216,5 +220,18 @@ class ItemController extends Controller
 	            echo '{}';
             }
         }
+    }
+
+    /**
+     * @param $id int id of the item
+     * @throws CHttpException
+     */
+    public function actionDetail($id) {
+        $this->layout='//layouts/shop';
+
+        $model = $this->loadModel($id);
+        $this->render('detail',array(
+            'model'=>$model
+        ));
     }
 }
