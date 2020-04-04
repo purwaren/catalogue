@@ -11,7 +11,7 @@ if (empty($images)) {
         showCaption: false,
         uploadUrl: '".Yii::app()->createUrl('item/upload', array('id'=>$model->item_id))."',
         uploadAsync: true,
-        maxFileSize: 2048,
+        maxFileSize: 4096,
         maxFileCount: 3
     });
     ", CClientScript::POS_READY);
@@ -38,7 +38,7 @@ if (empty($images)) {
             initialPreviewConfig: jsonPhotos,
             uploadUrl: '".Yii::app()->createUrl('item/upload',array('id'=>$model->item_id))."',
             overwriteInitial: false,
-            maxFileSize: 2048,
+            maxFileSize: 4096,
             maxFileCount: 3
         });
     ", CClientScript::POS_READY);

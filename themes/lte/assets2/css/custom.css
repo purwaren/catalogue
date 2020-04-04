@@ -1,1 +1,14 @@
 /* your styles go here */
+ul.pagination li a {
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+    color: #467fbf;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+ul.pagination li.active a {
+    color: #fff;
+    background-color: #467fbf;
+    border-color: #467fbf;
+}

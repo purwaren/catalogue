@@ -29,6 +29,7 @@ $this->breadcrumbs = array(
                         'value'=>'$this->grid->dataProvider->pagination->currentPage*$this->grid->dataProvider->pagination->pageSize+$row+1'
                     ),
                     'item_code',
+                    'name',
                     'cat_code',
                     array(
                         'name'=>'price',
