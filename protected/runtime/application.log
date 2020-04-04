@@ -9954,3 +9954,441 @@ Stack trace:
 REQUEST_URI=/shop/index.php/item/deleteImage/1
 HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
 ---
+2020/04/03 21:25:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /www/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Anda tidak diot...')
+#1 /www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/framework/web/CWebApplication.php(282): CController->run('deleteImage')
+#8 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/deleteImag...')
+#9 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /www/shop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/shop/index.php/item/deleteImage/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/upload/1
+---
+2020/04/03 21:33:06 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (40)
+in /www/shop/protected/controllers/ItemController.php (66)
+in /www/shop/index.php (13)
+2020/04/03 21:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/04/03 21:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "img" seperti yang diminta.' in /www/framework/web/CController.php:483
+Stack trace:
+#0 /www/framework/web/CController.php(270): CController->missingAction('img')
+#1 /www/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/logo-s...')
+#3 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /www/shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/index.php/site/img/logo-small.png
+HTTP_REFERER=http://devel.local/shop/index.php/site/index
+---
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:54:39 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:18 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:23 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (42)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. Statement SQL yang dijalankan: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /www/shop/protected/models/form/ItemForm.php (45)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 02:55:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. The SQL statement executed was: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/ItemForm.php(45): CActiveRecord->save()
+#3 /www/shop/protected/controllers/ItemController.php(93): ItemForm->save()
+#4 [internal function]: ItemController->actionUpdate('1')
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#6 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /www/framework/web/CWebApplication.php(282): CController->run('update')
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/update')
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/index.php/item/update/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/update/1
+---
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (54)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. Statement SQL yang dijalankan: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /www/shop/protected/models/form/ItemForm.php (57)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 03:00:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. The SQL statement executed was: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/ItemForm.php(57): CActiveRecord->save()
+#3 /www/shop/protected/controllers/ItemController.php(93): ItemForm->save()
+#4 [internal function]: ItemController->actionUpdate('1')
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#6 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /www/framework/web/CWebApplication.php(282): CController->run('update')
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/update')
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/index.php/item/update/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/update/1
+---
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:04 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (54)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. Statement SQL yang dijalankan: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /www/shop/protected/models/form/ItemForm.php (57)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 03:01:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001002003' for key 'item_code'. The SQL statement executed was: INSERT INTO `item` (`created_at`, `name`, `item_code`, `description`, `cat_code`, `sup_code`, `price`, `qty_stock`, `created_by`) VALUES (NOW(), :yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /www/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /www/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /www/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /www/shop/protected/models/form/ItemForm.php(57): CActiveRecord->save()
+#3 /www/shop/protected/controllers/ItemController.php(93): ItemForm->save()
+#4 [internal function]: ItemController->actionUpdate('1')
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#6 /www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /www/framework/web/CWebApplication.php(282): CController->run('update')
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController('item/update')
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/index.php/item/update/1
+HTTP_REFERER=http://devel.local/shop/index.php/item/update/1
+---
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "cat_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "sup_name" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "created_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "created_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "updated_by" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "updated_at" dari kelas "ItemForm".
+in /www/shop/protected/controllers/ItemController.php (85)
+in /www/shop/index.php (13)
+2020/04/04 03:01:33 [warning] [application] Gagal mengeset atribut unsafe "id" dari kelas "ItemCustom".
+in /www/shop/protected/models/form/ItemForm.php (43)
+in /www/shop/protected/controllers/ItemController.php (93)
+in /www/shop/index.php (13)
+2020/04/04 03:15:21 [error] [php] Trying to get property of non-object (/www/shop/themes/lte/views/item/view.php:15)
+Stack trace:
+#0 /www/framework/web/CController.php(869): ItemController->renderFile()
+#1 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#2 /www/shop/protected/controllers/ItemController.php(49): ItemController->render()
+#3 unknown(0): ItemController->actionView()
+#4 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#8 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#11 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /www/framework/web/CController.php(291): CFilterChain->run()
+#13 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#14 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#15 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/1
+in /www/shop/themes/lte/views/item/view.php (15)
+in /www/shop/protected/controllers/ItemController.php (49)
+in /www/shop/index.php (13)
+2020/04/04 03:16:45 [error] [php] Trying to get property of non-object (/www/shop/themes/lte/views/item/view.php:15)
+Stack trace:
+#0 /www/framework/web/CController.php(869): ItemController->renderFile()
+#1 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#2 /www/shop/protected/controllers/ItemController.php(49): ItemController->render()
+#3 unknown(0): ItemController->actionView()
+#4 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#8 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#11 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /www/framework/web/CController.php(291): CFilterChain->run()
+#13 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#14 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#15 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/1
+in /www/shop/themes/lte/views/item/view.php (15)
+in /www/shop/protected/controllers/ItemController.php (49)
+in /www/shop/index.php (13)
+2020/04/04 03:41:18 [error] [php] Trying to get property of non-object (/www/shop/protected/models/custom/ItemCustom.php:66)
+Stack trace:
+#0 /www/framework/web/CBaseController.php(95): ItemController->renderInternal()
+#1 /www/framework/web/CController.php(869): ItemController->renderFile()
+#2 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#3 /www/shop/protected/controllers/ItemController.php(49): ItemController->render()
+#4 unknown(0): ItemController->actionView()
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#6 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#15 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/1
+in /www/shop/protected/models/custom/ItemCustom.php (66)
+in /www/shop/themes/lte/views/item/view.php (12)
+in /www/shop/protected/controllers/ItemController.php (49)
+2020/04/04 03:42:11 [error] [php] Trying to get property of non-object (/www/shop/protected/models/custom/ItemCustom.php:66)
+Stack trace:
+#0 /www/framework/web/CBaseController.php(95): ItemController->renderInternal()
+#1 /www/framework/web/CController.php(869): ItemController->renderFile()
+#2 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#3 /www/shop/protected/controllers/ItemController.php(49): ItemController->render()
+#4 unknown(0): ItemController->actionView()
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#6 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#15 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/1
+in /www/shop/protected/models/custom/ItemCustom.php (66)
+in /www/shop/themes/lte/views/item/view.php (12)
+in /www/shop/protected/controllers/ItemController.php (49)
+2020/04/04 03:43:45 [error] [php] Trying to get property of non-object (/www/shop/protected/models/custom/ItemCustom.php:66)
+Stack trace:
+#0 /www/framework/web/CBaseController.php(95): ItemController->renderInternal()
+#1 /www/framework/web/CController.php(869): ItemController->renderFile()
+#2 /www/framework/web/CController.php(782): ItemController->renderPartial()
+#3 /www/shop/protected/controllers/ItemController.php(49): ItemController->render()
+#4 unknown(0): ItemController->actionView()
+#5 /www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#6 /www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /www/framework/web/filters/CFilterChain.php(133): ItemController->runAction()
+#9 /www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /www/framework/web/filters/CInlineFilter.php(58): ItemController->filterAccessControl()
+#12 /www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /www/framework/web/CController.php(291): CFilterChain->run()
+#14 /www/framework/web/CController.php(265): ItemController->runActionWithFilters()
+#15 /www/framework/web/CWebApplication.php(282): ItemController->run()
+#16 /www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /www/shop/index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/index.php/item/1
+in /www/shop/protected/models/custom/ItemCustom.php (66)
+in /www/shop/themes/lte/views/item/view.php (12)
+in /www/shop/protected/controllers/ItemController.php (49)
+2020/04/04 03:45:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.{{storage}}' doesn't exist. Statement SQL yang dijalankan: SHOW FULL COLUMNS FROM `{{storage}}`.
+in /www/shop/protected/extensions/iwi/Iwi.php (142)
+in /www/shop/protected/extensions/iwi/Iwi.php (126)
+in /www/shop/protected/extensions/iwi/Iwi.php (56)

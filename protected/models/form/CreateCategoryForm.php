@@ -55,7 +55,8 @@ class CreateCategoryForm extends CFormModel
             'A' => 'Pakaian Pria',
             'B' => 'Pakaian Wanita',
             'C' => 'Pakaian Anak-anak',
-            'D' => 'Aksesoris'
+            'D' => 'Aksesoris',
+            'E' => 'Dalaman dan Handuk'
         );
     }
 }

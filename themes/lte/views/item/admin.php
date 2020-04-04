@@ -30,7 +30,10 @@ $this->breadcrumbs = array(
                     ),
                     'item_code',
                     'cat_code',
-                    'price',
+                    array(
+                        'name'=>'price',
+                        'type'=>'number'
+                    ),
                     'qty_stock',
                     array(
                         'class'=>'CButtonColumn',

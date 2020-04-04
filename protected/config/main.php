@@ -57,6 +57,14 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 
+        'iwi' => array(
+            'class' => 'application.extensions.iwi.IwiComponent',
+            // GD or ImageMagick
+            'driver' => 'GD',
+            // ImageMagick setup path
+            //'params'=>array('directory'=>'C:/ImageMagick'),
+        ),
+
 		// uncomment the following to enable URLs in path-format
 
 		'urlManager'=>array(

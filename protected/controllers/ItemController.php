@@ -28,7 +28,7 @@ class ItemController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','create','update','admin','delete','upload', 'create'),
+				'actions'=>array('index','view','create','update','admin','delete','upload', 'create', 'deleteImage'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -80,16 +80,18 @@ class ItemController extends Controller
      */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$item=$this->loadModel($id);
+		$model = new ItemForm();
+		$model->attributes = $item->attributes;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['ItemCustom']))
+		if(isset($_POST['ItemForm']))
 		{
-			$model->attributes=$_POST['ItemCustom'];
+			$model->attributes=$_POST['ItemForm'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('admin','id'=>$model->id));
 		}
 
 		$this->render('update',array(
@@ -198,6 +200,21 @@ class ItemController extends Controller
                 'model'=>$model,
                 'images'=>$images
             ));
+        }
+    }
+
+    /**
+     * @param $id int id of the image
+     * @throws CDbException
+     */
+    public function actionDeleteImage($id) {
+	    if (Yii::app()->request->isAjaxRequest && Yii::app()->request->isPostRequest) {
+	        $img = ImagesCustom::model()->findByPk($_POST['key']);
+	        if (!empty($img)) {
+	            unlink($img->location);
+	            $img->delete();
+	            echo '{}';
+            }
         }
     }
 }

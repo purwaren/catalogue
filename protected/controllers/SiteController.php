@@ -28,7 +28,10 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
 		$this->layout = '//layouts/shop';
-		$this->render('index');
+		$model = new ItemCustom('search');
+		$this->render('index',array(
+		    'model'=>$model
+        ));
 	}
 
 	public function actionCatalogue() 

@@ -1,6 +1,6 @@
 <?php
 /* @var $this ItemController */
-/* @var $model ItemCustom */
+/* @var $model ItemForm */
 /* @var $form CActiveForm */
 
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl.'/assets/plugins/select2/select2.css');
@@ -49,6 +49,11 @@ Yii::app()->clientScript->registerScript('form', "
                 <?php echo $form->error($model,'item_code'); ?>
             </div>
             <div class="form-group">
+                <?php echo $form->labelEx($model,'name'); ?>
+                <?php echo $form->textField($model,'name',array('class'=>'form-control','placeholder'=>'Nama Barang', 'maxlength'=>32)); ?>
+                <?php echo $form->error($model,'name'); ?>
+            </div>
+            <div class="form-group">
                 <?php echo $form->labelEx($model,'description'); ?>
                 <?php echo $form->textArea($model,'description',array('class'=>'form-control','placeholder'=>'Model, ukuran, warna dst.')); ?>
                 <?php echo $form->error($model,'description'); ?>
@@ -69,17 +74,19 @@ Yii::app()->clientScript->registerScript('form', "
                 <?php echo $form->dropDownList($model,'cat_code',CategoriesCustom::getAllCategoryOptions(),array('class'=>'form-control select2','prompt'=>'Pilih Kelompok Barang')); ?>
                 <?php echo $form->error($model,'cat_code'); ?>
             </div>
+            <!--
             <div class="form-group">
                 <?php echo $form->labelEx($model,'sup_code'); ?>
                 <?php echo $form->dropDownList($model,'sup_code',SuppliersCustom::getAllSupplierOptions(),array('class'=>'form-control select2','prompt'=>'Pilih Supplier')); ?>
                 <?php echo $form->error($model,'sup_code'); ?>
             </div>
+            -->
 
         </div><!-- /.box-body -->
         <div class="box-footer">
             <?php echo CHtml::submitButton('Simpan',array('class'=>'btn btn-primary')); ?>
             &nbsp;
-            <?php echo CHtml::linkButton('Kembali',array('class'=>'btn btn-danger','href'=>array('users/admin'))); ?>
+            <?php echo CHtml::linkButton('Kembali',array('class'=>'btn btn-danger','href'=>array('item/admin'))); ?>
         </div>
         <?php } ?>
     </div><!-- /.box -->
