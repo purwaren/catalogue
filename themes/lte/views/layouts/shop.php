@@ -73,6 +73,8 @@
                 <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare3.jpg" alt="..." class="img-fluid"></a></li>
                 <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare2.jpg" alt="..." class="img-fluid"></a></li>
                 <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare.jpg" alt="..." class="img-fluid"></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare2.jpg" alt="..." class="img-fluid"></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare3.jpg" alt="..." class="img-fluid"></a></li>
               </ul>
             </div>
           </div>

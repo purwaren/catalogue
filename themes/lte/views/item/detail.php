@@ -1,41 +1,60 @@
+<?php
+/**
+ * @var $this ItemController
+ * @var $model ItemCustom
+ */
+
+$thumbs = $model->getAllThumbImage();
+$images = $model->getAllBigImage();
+
+?>
 <div id="content">
     <div class="container">
         <div class="row bar">
             <!-- LEFT COLUMN _________________________________________________________-->
             <div class="col-lg-12">
-                <p class="lead">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain me be. So landlord by we unlocked sensible it. Fat cannot use denied excuse son law. Wisdom happen suffer common the appear ham beauty her had. Or belonging zealously existence as by resources.</p>
-                <p class="goToDescription"><a href="#details" class="scroll-to text-uppercase">Scroll to product details, material & care and sizing</a></p>
+                <p class="lead">
+                    Mode Fashion menyediakan <strong>koleksi lengkap</strong> kebutuhan Fashion kamu. Kamu bisa menemukan berbagai jenis pakaian mulai dari
+                    <span style="color: #ffc93e; font-weight: bold">Pakaian Wanita, Pakaian Anak-Anak, Aksesoris, Pakaian Pria</span>. <strong>Hasanah Mart</strong> menyediakan barang-barang kebutuhan rumah tangga dengan <span style="color: #ffc93e; font-weight: bold">harga terjangkau</span>.
+                    Keuntungan penjualan di Hasanah Mart <span style="color: #ffc93e; font-weight: bold">100% digunakan untuk kegiatan amal.</span>
+                </p>
+                <p class="goToDescription"><a href="#details" class="scroll-to text-uppercase">Lihat Deskripsi Barang</a></p>
                 <div id="productMain" class="row">
                     <div class="col-sm-6">
                         <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
-                            <div> <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailbig1.jpg" alt="" class="img-fluid"></div>
-                            <div> <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailbig2.jpg" alt="" class="img-fluid"></div>
-                            <div> <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailbig3.jpg" alt="" class="img-fluid"></div>
+                            <?php
+                                if(!empty($images)) {
+                                    foreach ($images as $image) {
+                                        echo '<div>'.CHtml::image($image, $model->name, array('class'=>'img-fluid')).'</div>';
+                                    }
+                                }
+                            ?>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="box">
                             <form>
                                 <div class="sizes">
-                                    <h3>Available sizes</h3>
+                                    <h3>Ukuran (Size)</h3>
                                     <select class="bs-select">
-                                        <option value="small">Small</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="large">Large</option>
-                                        <option value="x-large">X Large</option>
+                                        <option value="small">S (Kecil)</option>
+                                        <option value="medium">M (Sedang)</option>
+                                        <option value="large">L (Besar)</option>
+                                        <option value="x-large">XL (Ekstra Besar)</option>
                                     </select>
                                 </div>
-                                <p class="price">$124.00</p>
+                                <p class="price">Rp <?php echo number_format($model->price) ?></p>
                                 <p class="text-center">
-                                    <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                                    <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i></button>
+                                    <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> TERSEDIA : <?php echo number_format($model->qty_stock) ?> item</button>
                                 </p>
                             </form>
                         </div>
                         <div data-slider-id="1" class="owl-thumbs">
-                            <button class="owl-thumb-item"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare.jpg" alt="" class="img-fluid"></button>
-                            <button class="owl-thumb-item"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare2.jpg" alt="" class="img-fluid"></button>
-                            <button class="owl-thumb-item"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare3.jpg" alt="" class="img-fluid"></button>
+                            <?php
+                                foreach ($thumbs as $thumb) {
+                                    echo '<button class="owl-thumb-item">'.CHtml::image($thumb, $model->name, array('class'=>'img-fluid')).'</button>';
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -65,74 +84,6 @@
                         <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></li>
                     </ul>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="box text-uppercase mt-0 mb-small">
-                            <h3>You may also like these products</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product2.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product3.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product1.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="box text-uppercase mt-0 mb-small">
-                            <h3>Products viewed recently</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product3.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product1.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="product">
-                            <div class="image"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product2.jpg" alt="" class="img-fluid image1"></a></div>
-                            <div class="text">
-                                <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                                <p class="price">$143</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

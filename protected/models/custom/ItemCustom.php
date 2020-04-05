@@ -67,4 +67,28 @@ class ItemCustom extends Item
             return Yii::app()->baseUrl.'/'.$cache->adaptive(400, 400)->cache();
         }
     }
+
+    public function getAllThumbImage() {
+        $images = ImagesCustom::model()->findAllByAttributes(array('item_id'=>$this->id));
+        if (!empty($images)) {
+            $img = array();
+            foreach ($images as $row) {
+                $cache = Yii::app()->iwi->load($row->location);
+                $img[] = Yii::app()->baseUrl.'/'.$cache->adaptive(155,155)->cache();
+            }
+            return $img;
+        }
+    }
+
+    public function getAllBigImage() {
+        $images = ImagesCustom::model()->findAllByAttributes(array('item_id'=>$this->id));
+        if (!empty($images)) {
+            $img = array();
+            foreach ($images as $row) {
+                $cache = Yii::app()->iwi->load($row->location);
+                $img[] = Yii::app()->baseUrl.'/'.$cache->adaptive(540,800)->cache();
+            }
+            return $img;
+        }
+    }
 }

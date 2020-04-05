@@ -41,11 +41,11 @@ class ImageUploadForm extends CFormModel
     private function getPath()
     {
         if (!is_dir(Yii::app()->params['imagePath'])) {
-            mkdir(Yii::app()->params['imagePath'],'0777', true);
+            mkdir(Yii::app()->params['imagePath'],0777, true);
         }
         $path = Yii::app()->params['imagePath'].date('Y-m-d');
         if (!is_dir($path)) {
-            mkdir($path, '0777', true);
+            mkdir($path, 0777, true);
         }
         return $path;
     }
