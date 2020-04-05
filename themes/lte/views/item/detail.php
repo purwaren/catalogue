@@ -5,7 +5,13 @@
  */
 
 $thumbs = $model->getAllThumbImage();
+if (empty($thumbs)) {
+    $thumbs[] = 'https://via.placeholder.com/155';
+}
 $images = $model->getAllBigImage();
+if (empty($images)) {
+    $images = 'https://via.placeholder.com/540';
+}
 
 ?>
 <div id="content">
