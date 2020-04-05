@@ -10,7 +10,7 @@ if (empty($thumbs)) {
 }
 $images = $model->getAllBigImage();
 if (empty($images)) {
-    $images = 'https://via.placeholder.com/540';
+    $images[] = 'https://via.placeholder.com/540';
 }
 
 ?>
