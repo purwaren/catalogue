@@ -27,6 +27,10 @@ $this->breadcrumbs=array(
 					'data'=>$model,
 					'attributes'=>array(
 							'id',
+							array(
+							    'name'=>'store_id',
+                                'value'=> isset($model->store)?$model->store->name:null,
+                            ),
 							'name',
 							'username',
 							'email',
@@ -48,6 +52,7 @@ $this->breadcrumbs=array(
 		</div><!-- /.box-body -->
 		<div class="box-footer">
 			<?php echo CHtml::link('Kembali',array('users/admin'),array('class'=>'btn btn-primary'))?>
+			<?php echo CHtml::link('Kembali',array('users/update','id'=>$model->id),array('class'=>'btn btn-warning'))?>
 		</div><!-- /.box-footer-->
 	</div><!-- /.box -->
 </section><!-- /.content -->

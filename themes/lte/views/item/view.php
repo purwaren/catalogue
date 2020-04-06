@@ -57,6 +57,7 @@ if (!empty($image)) {
 		</div><!-- /.box-body -->
 		<div class="box-footer">
 			<?php echo CHtml::link('Kembali',array('item/admin'),array('class'=>'btn btn-primary'))?>
+            <?php echo CHtml::link('Ubah',array('item/update','id'=>$model->id),array('class'=>'btn btn-warning'))?>
 		</div><!-- /.box-footer-->
 	</div><!-- /.box -->
 </section><!-- /.content -->

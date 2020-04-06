@@ -43,12 +43,38 @@ $this->breadcrumbs = array(
                         'htmlOptions'=>array('class'=>'hidden-xs'),
                         'headerHtmlOptions'=>array('class'=>'hidden-xs'),
                     ),
-
                     array(
                         'class'=>'CButtonColumn',
+                        'buttons'=>array(
+                            'view'=>array(
+                                'label'=>'<i class="fa fa-search"></i>',
+                                'imageUrl'=>false,
+                                'options'=>array('class'=>'btn btn-xs btn-primary','title'=>'Detail','data-toggle'=>'tooltip')
+                            ),
+                            'update'=>array(
+                                'label'=>'<i class="fa fa-edit"></i>',
+                                'imageUrl'=>false,
+                                'options'=>array('class'=>'btn btn-xs btn-warning','title'=>'Ubah','data-toggle'=>'tooltip')
+                            ),
+                            'delete'=>array(
+                                'label'=>'<i class="fa fa-trash"></i>',
+                                'imageUrl'=>false,
+                                'options'=>array('class'=>'btn btn-xs btn-danger','title'=>'Hapus','data-toggle'=>'tooltip'),
+                            )
+                        )
                     ),
                 ),
-                'itemsCssClass'=>'table table-bordered table-hover dataTable'
+                'itemsCssClass'=>'table table-striped table-bordered table-hover dataTable',
+                'cssFile' => false,
+                'summaryCssClass' => 'dataTables_info',
+                'template'=>'{summary}{items}{pager}',
+                'pagerCssClass'=>'dataTables_paginate paging_simple_numbers text-center',
+                'pager'=>array(
+                    'htmlOptions'=>array('class'=>'pagination'),
+                    'internalPageCssClass'=>'paginate_button',
+                    'selectedPageCssClass'=>'active',
+                    'header'=>''
+                ),
             )); ?>
         </div><!-- /.box-body -->
         <div class="box-footer">

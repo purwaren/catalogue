@@ -105,12 +105,8 @@ class Stores extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
-            'sort'=>array(
-                'defaultOrder'=>'alias'
-            )
 		));
 	}
-
 
 	/**
 	 * Returns the static model of the specified AR class.

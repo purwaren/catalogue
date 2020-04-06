@@ -48,6 +48,13 @@
 					<?php echo $form->error($model,'email'); ?>
 				</div>
 			</div>
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'store_id',array('class'=>'col-sm-4 control-label')); ?>
+                <div class="col-sm-8">
+                    <?php echo $form->dropDownList($model,'store_id',StoresCustom::getAllStoreOptions(),array('class'=>'form-control','prompt'=>'Pilih Toko')); ?>
+                    <?php echo $form->error($model,'store_id'); ?>
+                </div>
+            </div>
 			<?php if($model->isNewRecord) { ?>
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'password',array('class'=>'col-sm-4 control-label')); ?>
@@ -65,6 +72,7 @@
 				</div>
 			</div>
 			<?php } ?>
+
 		</div>
 	</div><!-- /.box-body -->
 	<div class="box-footer">

@@ -65,6 +65,7 @@
                 <p class="text-uppercase"><strong>Mode Fashion Group</strong><br>Jalan Laksana No 68 ABC<br>Kota Medan<br>Sumatra Utara</p><a href="contact.html" class="btn btn-template-main">Halaman Kontak</a>
               <hr class="d-block d-lg-none">
             </div>
+            <!--
             <div class="col-lg-4">
               <ul class="list-inline photo-stream">
                 <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare.jpg" alt="..." class="img-fluid"></a></li>
@@ -76,7 +77,7 @@
                   <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare2.jpg" alt="..." class="img-fluid"></a></li>
                   <li class="list-inline-item"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/detailsquare3.jpg" alt="..." class="img-fluid"></a></li>
               </ul>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="copyrights">

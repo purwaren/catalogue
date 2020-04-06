@@ -19,6 +19,7 @@
  * @property string $timestamp_updated
  * @property string $user_create
  * @property string $user_update
+ * @property string $store_id
  */
 class Users extends CActiveRecord
 {
@@ -47,7 +48,7 @@ class Users extends CActiveRecord
 			array('status, flag_delete, login_atemp', 'numerical', 'integerOnly'=>true),
 			array('name, email, password', 'length', 'max'=>128),
 			array('username, salt, user_create, user_update', 'length', 'max'=>32),
-			array('last_login_attempt, last_login_time, timestamp_updated', 'safe'),
+			array('last_login_attempt, last_login_time, timestamp_updated, store_id', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, username, email, password, salt, status, flag_delete, login_atemp, last_login_attempt, last_login_time, timestamp_created, timestamp_updated, user_create, user_update', 'safe', 'on'=>'search'),
@@ -62,6 +63,7 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+		    'store'=> array(self::BELONGS_TO, 'StoresCustom', 'store_id')
 		);
 	}
 
@@ -86,6 +88,7 @@ class Users extends CActiveRecord
 			'timestamp_updated' => 'Timestamp Updated',
 			'user_create' => 'User Create',
 			'user_update' => 'User Update',
+            'store_id' => 'Toko'
 		);
 	}
 

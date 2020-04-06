@@ -91,4 +91,9 @@ class ItemCustom extends Item
             return $img;
         }
     }
+
+    public function getCategory() {
+        $model = CategoriesCustom::model()->findByAttributes(array('code'=>$this->cat_code));
+        return $model->name;
+    }
 }

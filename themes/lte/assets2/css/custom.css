@@ -12,3 +12,15 @@ ul.pagination li.active a {
     background-color: #467fbf;
     border-color: #467fbf;
 }
+
+#details {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
+#details blockquote {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    border-left: 5px solid #467fbf;
+}

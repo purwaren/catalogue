@@ -90,6 +90,7 @@ if (empty($images)) {
 
             </div><!-- /.box-body -->
             <div class="box-footer">
+                <?php echo CHtml::linkButton('Simpan',array('class'=>'btn btn-primary','href'=>array('item/view','id'=>$model->item_id))); ?>
                 <?php echo CHtml::linkButton('Kembali',array('class'=>'btn btn-danger','href'=>array('item/admin'))); ?>
             </div>
     </div><!-- /.box -->

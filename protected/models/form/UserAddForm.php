@@ -15,11 +15,12 @@ class UserAddForm extends CFormModel
     public $passwordConfirm;
     public $data;
     public $isNewRecord=true;
+    public $store_id;
 
     public function rules()
     {
         return array(
-            array('name, username, email, password, passwordConfirm', 'required'),
+            array('name, username, email, password, passwordConfirm, store_id', 'required'),
             array('passwordConfirm', 'compare', 'compareAttribute'=>'password')
         );
     }

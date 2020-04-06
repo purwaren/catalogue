@@ -55,7 +55,13 @@ Yii::app()->clientScript->registerScript('form', "
             </div>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'description'); ?>
-                <?php echo $form->textArea($model,'description',array('class'=>'form-control','placeholder'=>'Model, ukuran, warna dst.')); ?>
+                <?php $this->widget('ext.redactor.ERedactorWidget',array(
+                    'model'=>$model,
+                    'attribute'=>'description',
+                    'options'=>array(
+                        'lang'=>'id'
+                    )
+                ))?>
                 <?php echo $form->error($model,'description'); ?>
             </div>
             <div class="form-group">

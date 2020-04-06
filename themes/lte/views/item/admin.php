@@ -30,7 +30,10 @@ $this->breadcrumbs = array(
                     ),
                     'item_code',
                     'name',
-                    'cat_code',
+                    array(
+                        'name'=>'cat_code',
+                        'value'=>'$data->getCategory()'
+                    ),
                     array(
                         'name'=>'price',
                         'type'=>'number'

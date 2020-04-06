@@ -25,7 +25,7 @@ class StoresCustom extends Stores {
             'flag_delete' => 'Flag Delete',
             'created_by' => 'Created By',
             'created_at' => 'Created At',
-            'area' => 'Area',
+            'store_id' => 'Toko',
         );
     }
 
@@ -97,5 +97,18 @@ class StoresCustom extends Stores {
     public static function model($className=__CLASS__)
     {
         return parent::model($className);
+    }
+
+    public static function getAllStoreOptions() {
+        $criteria = new CDbCriteria();
+        $criteria->order = 'name';
+        $model = self::model()->findAll($criteria);
+        $options = array();
+        if (!empty($model)) {
+            foreach ($model as $row) {
+                $options[$row->id] = $row->name;
+            }
+        }
+        return $options;
     }
 }
