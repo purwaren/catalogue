@@ -57,6 +57,20 @@ class ItemCustom extends Item
         ));
     }
 
+    public function searchForCatalogue($group) {
+        $criteria= new CDbCriteria;
+        $criteria->join = 'LEFT JOIN categories c ON t.cat_code = c.code';
+        $criteria->compare('c.cat_group', $group);
+        $criteria->order = 'id DESC';
+
+        return new CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+            'pagination'=>array(
+                'pageSize' => 16
+            )
+        ));
+    }
+
     /**
      * @return string
      */

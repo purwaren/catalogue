@@ -37,74 +37,16 @@
             <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outlined"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
             <div id="navigation" class="navbar-collapse collapse">
               <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Pakaian Wanita </b></a>
+                <li class="nav-item dropdown"><a href="<?php echo Yii::app()->createUrl('site/catalogue',array('group'=>'B')) ?>"  class="dropdown-toggle">Pakaian Wanita </b></a>
                 </li>
-                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Pakaian Anak </b></a>
+                <li class="nav-item dropdown"><a href="<?php echo Yii::app()->createUrl('site/catalogue',array('group'=>'C')) ?>" class="dropdown-toggle">Pakaian Anak </b></a>
                 </li>
-                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Aksesoris </b></a>
+                <li class="nav-item dropdown"><a href="<?php echo Yii::app()->createUrl('site/catalogue',array('group'=>'D')) ?>" class="dropdown-toggle">Aksesoris </b></a>
                 </li>
-                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Pakaian Pria </b></a>
+                <li class="nav-item dropdown"><a href="<?php echo Yii::app()->createUrl('site/catalogue',array('group'=>'A')) ?>" class="dropdown-toggle">Pakaian Pria </b></a>
                 </li>
-                  <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Hasanah Mart</b></a>
+                  <li class="nav-item dropdown"><a href="<?php echo Yii::app()->createUrl('site/catalogue',array('group'=>'F')) ?>" class="dropdown-toggle">Hasanah Mart</b></a>
                   </li>
-                <!-- ========== FULL WIDTH MEGAMENU ==================-->
-                <!--
-                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle">Katalog <b class="caret"></b></a>
-                  <ul class="dropdown-menu megamenu">
-                    <li>
-                      <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                          <h5>PAKAIAN WANITA</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a href="index.html" class="nav-link">Option 1: Default Page</a></li>
-                            <li class="nav-item"><a href="index2.html" class="nav-link">Option 2: Application</a></li>
-                            <li class="nav-item"><a href="index3.html" class="nav-link">Option 3: Startup</a></li>
-                            <li class="nav-item"><a href="index4.html" class="nav-link">Option 4: Agency</a></li>
-                            <li class="nav-item"><a href="index5.html" class="nav-link">Option 5: Portfolio</a></li>
-                          </ul>
-                          <h5>PAKAIAN PRIA</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
-                            <li class="nav-item"><a href="team.html" class="nav-link">Our team</a></li>
-                            <li class="nav-item"><a href="team-member.html" class="nav-link">Team member</a></li>
-                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                          <h5>PAKAIAN ANAK</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a href="portfolio-2.html" class="nav-link">2 columns</a></li>
-                            <li class="nav-item"><a href="portfolio-no-space-2.html" class="nav-link">2 columns with negative space</a></li>
-                            <li class="nav-item"><a href="portfolio-3.html" class="nav-link">3 columns</a></li>
-                            <li class="nav-item"><a href="portfolio-no-space-3.html" class="nav-link">3 columns with negative space</a></li>
-                            <li class="nav-item"><a href="portfolio-4.html" class="nav-link">4 columns</a></li>
-                            <li class="nav-item"><a href="portfolio-no-space-4.html" class="nav-link">4 columns with negative space</a></li>
-                            <li class="nav-item"><a href="portfolio-detail.html" class="nav-link">Portfolio - detail</a></li>
-                            <li class="nav-item"><a href="portfolio-detail-2.html" class="nav-link">Portfolio - detail 2</a></li>
-                          </ul>
-                          <h5>AKSESORIS</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a href="customer-register.html" class="nav-link">Register / login</a></li>
-                            <li class="nav-item"><a href="customer-orders.html" class="nav-link">Orders history</a></li>
-                            <li class="nav-item"><a href="customer-order.html" class="nav-link">Order history detail</a></li>
-                            <li class="nav-item"><a href="customer-wishlist.html" class="nav-link">Wishlist</a></li>
-                            <li class="nav-item"><a href="customer-account.html" class="nav-link">Customer account / change password</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <!-- ========== FULL WIDTH MEGAMENU END ==================-->
-                <!-- ========== Contact dropdown ==================-->
-<!--                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Kontak <b class="caret"></b></a>-->
-<!--                  <ul class="dropdown-menu">-->
-<!--                    <li class="dropdown-item"><a href="contact.html" class="nav-link">Contact option 1</a></li>-->
-<!--                    <li class="dropdown-item"><a href="contact2.html" class="nav-link">Contact option 2</a></li>-->
-<!--                    <li class="dropdown-item"><a href="contact3.html" class="nav-link">Contact option 3</a></li>-->
-<!--                  </ul>-->
-<!--                </li>-->
-                <!-- ========== Contact dropdown end ==================-->
               </ul>
             </div>
             <div id="search" class="collapse clearfix">

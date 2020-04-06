@@ -1,13 +1,21 @@
+<?php
+/**
+ * @var $this SiteController
+ * @var $model ItemCustom
+ * @var $category CategoriesCustom
+ */
+
+?>
 <div id="heading-breadcrumbs">
     <div class="container">
         <div class="row d-flex align-items-center flex-wrap">
         <div class="col-md-7">
-            <h1 class="h2">Katalog</h1>
+            <h1 class="h2"><?php echo $category->getGroup() ?></h1>
         </div>
         <div class="col-md-5">
             <ul class="breadcrumb d-flex justify-content-end">
-            <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-            <li class="breadcrumb-item active">Katalog</li>
+            <li class="breadcrumb-item"><a href="<?php echo Yii::app()->createUrl('site/index') ?>">Beranda</a></li>
+            <li class="breadcrumb-item active"><?php echo $category->getGroup() ?></li>
             </ul>
         </div>
         </div>
@@ -17,117 +25,36 @@
     <div class="container">
         <div class="row bar">
         <div class="col-md-12">
-            <p class="text-muted lead text-center">In our Ladies department we offer wide selection of the best products we have found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss.</p>
+            <?php if($category->cat_group == 'B') { ?>
+            <p class="text-muted lead text-center">
+                Katalog pakaian wanita Mode Fashion, menyediakan beragam jenis pakaian mulai dari atasan, bawahan, dress, gamis dan yang lain.
+                Hadir dengan pilihan menarik dan kualitas terbaik hanya untuk kamu. Dapatkan dan segera miliki fashion terbaru dari kami.
+            </p>
+            <?php } elseif($category->cat_group == 'A') { ?>
+            <?php } ?>
             <div class="products-big">
-            <div class="row products">
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product1.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">Fur coat with very but very very long name</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product2.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">White Blouse Armani</a></h3>
-                    <p class="price">
-                        <del>$280</del> $143.00
-                    </p>
-                    </div>
-                    <div class="ribbon-holder">
-                    <div class="ribbon sale">SALE</div>
-                    <div class="ribbon new">NEW</div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product3.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">Black Blouse Versace</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product4.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">Black Blouse Versace</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product3.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">White Blouse Armani</a></h3>
-                    <p class="price">
-                        <del>$280</del> $143.00
-                    </p>
-                    </div>
-                    <div class="ribbon-holder">
-                    <div class="ribbon sale">SALE</div>
-                    <div class="ribbon new">NEW</div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product4.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">White Blouse Versace</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                    <div class="ribbon-holder">
-                    <div class="ribbon new">NEW</div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product2.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">White Blouse Versace</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                    <div class="ribbon-holder">
-                    <div class="ribbon new">NEW</div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                <div class="product">
-                    <div class="image"><a href="shop-detail.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/product1.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                    <h3 class="h5"><a href="shop-detail.html">Fur coat</a></h3>
-                    <p class="price">$143.00</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12 banner mb-small text-center"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/img/banner2.jpg" alt="" class="img-fluid"></a></div>
-            </div>
-            <div class="pages">
-            <p class="loadMore text-center"><a href="#" class="btn btn-template-outlined"><i class="fa fa-chevron-down"></i> Load more</a></p>
-            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
-                <ul class="pagination">
-                <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-double-left"></i></a></li>
-                <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                <li class="page-item"><a href="#" class="page-link">3</a></li>
-                <li class="page-item"><a href="#" class="page-link">4</a></li>
-                <li class="page-item"><a href="#" class="page-link">5</a></li>
-                <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
-                </ul>
-            </nav>
+                <?php $this->widget('zii.widgets.CListView', array(
+                    'dataProvider'=>$model->searchForCatalogue($category->cat_group),
+                    'itemView'=>'_catalogue',
+                    'itemsCssClass'=>'row products',
+                    'template'=>'{items} {pager}',
+                    'emptyTagName'=>'div',
+                    'emptyCssClass'=>'product-not-found alert alert-info',
+                    'enablePagination'=>true,
+                    'pagerCssClass'=>'pages d-flex justify-content-center',
+                    'pager'=>array(
+                        'htmlOptions'=>array('class'=>'pagination'),
+                        'internalPageCssClass'=>'page-item',
+                        'firstPageCssClass'=>'page-item',
+                        'lastPageCssClass'=>'page-item',
+                        'selectedPageCssClass'=>'active',
+                        'header'=>'',
+                        'firstPageLabel'=>'<< ',
+                        'lastPageLabel'=>' >>',
+                        'nextPageLabel'=>' >',
+                        'prevPageLabel'=>'< '
+                    )
+                )); ?>
             </div>
         </div>
         </div>

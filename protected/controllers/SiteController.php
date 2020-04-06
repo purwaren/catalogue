@@ -34,10 +34,18 @@ class SiteController extends Controller
         ));
 	}
 
-	public function actionCatalogue() 
+	public function actionCatalogue($group)
 	{
 		$this->layout = '//layouts/shop';
-		$this->render('catalogue');
+
+		$model = new ItemCustom('search');
+		$category = new CategoriesCustom();
+		$category->cat_group = $group;
+
+		$this->render('catalogue',array(
+		    'category'=>$category,
+            'model'=>$model
+        ));
 	}
 
 	public function actionDashboard() 

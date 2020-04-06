@@ -24,3 +24,8 @@ ul.pagination li.active a {
     font-size: 1rem;
     border-left: 5px solid #467fbf;
 }
+
+.product-not-found {
+    text-align: center;
+    width: 100%;
+}

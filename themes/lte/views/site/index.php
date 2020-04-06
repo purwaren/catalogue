@@ -274,7 +274,7 @@
 <div id="content">
     <div class="container">
         <div class="row bar">
-        <div class="col-md-12">
+            <div class="col-md-12">
             <div class="heading text-center">
               <h2>Koleksi Terbaru</h2>
             </div>
