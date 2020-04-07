@@ -66,7 +66,7 @@ $this->breadcrumbs = array(
             )); ?>
         </div><!-- /.box-body -->
         <div class="box-footer">
-            <?php echo CHtml::link('Tambah',array('suppliers/create'),array('class'=>'btn btn-primary'))?>
+            <?php echo CHtml::link('Tambah',array('stores/create'),array('class'=>'btn btn-primary'))?>
         </div><!-- /.box-footer-->
     </div><!-- /.box -->
 </section><!-- /.content -->

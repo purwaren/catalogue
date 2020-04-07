@@ -17,15 +17,16 @@ class StoresCustom extends Stores {
     {
         return array(
             'id' => 'ID',
-            'code' => 'Code',
-            'name' => 'Name',
+            'code' => 'Kode',
+            'name' => 'Nama',
             'alias' => 'Alias',
-            'address' => 'Address',
+            'address' => 'Alamat',
             'supervisor_id' => 'Supervisor',
             'flag_delete' => 'Flag Delete',
             'created_by' => 'Created By',
             'created_at' => 'Created At',
-            'store_id' => 'Toko',
+            'ig_account' => 'Akun Instagram',
+            'phone' => 'Whatsapp'
         );
     }
 

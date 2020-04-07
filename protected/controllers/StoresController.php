@@ -54,14 +54,14 @@ class StoresController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Stores;
+		$model=new StoresCustom();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Stores']))
+		if(isset($_POST['StoresCustom']))
 		{
-			$model->attributes=$_POST['Stores'];
+			$model->attributes=$_POST['StoresCustom'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -83,9 +83,9 @@ class StoresController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Stores']))
+		if(isset($_POST['StoresCustom']))
 		{
-			$model->attributes=$_POST['Stores'];
+			$model->attributes=$_POST['StoresCustom'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -144,7 +144,7 @@ class StoresController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Stores::model()->findByPk($id);
+		$model=StoresCustom::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

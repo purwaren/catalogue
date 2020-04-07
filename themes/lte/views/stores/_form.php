@@ -37,12 +37,18 @@
             <?php echo $form->textField($model,'address',array('class'=>'form-control','maxlength'=>128)); ?>
             <?php echo $form->error($model,'address'); ?>
         </div>
-
         <div class="form-group">
             <?php echo $form->labelEx($model,'phone'); ?>
-            <?php echo $form->textField($model,'phone',array('class'=>'form-control','maxlength'=>128)); ?>
+            <?php echo $form->textField($model,'phone',array('class'=>'form-control','maxlength'=>32)); ?>
             <?php echo $form->error($model,'phone'); ?>
         </div>
+
+        <div class="form-group">
+            <?php echo $form->labelEx($model,'ig_account'); ?>
+            <?php echo $form->textField($model,'ig_account',array('class'=>'form-control','maxlength'=>128)); ?>
+            <?php echo $form->error($model,'ig_account'); ?>
+        </div>
+
 
     </div>
     <div class="box-footer">
