@@ -43,7 +43,14 @@
                 array(
                     'label'=>'<i class="fa fa-file-excel-o"></i> <span>Kelompok Barang</span>',
                     'url'=>array('/categories/admin'),
-                    'itemOptions'=>array('class'=>'treeview')
+                    'itemOptions'=>array('class'=>'treeview'),
+                    'visible'=>Yii::app()->user->checkAccess('admin'),
+                ),
+                array(
+                    'label'=>'<i class="fa fa-shopping-cart"></i> <span>Toko</span>',
+                    'url'=>array('/stores/admin'),
+                    'itemOptions'=>array('class'=>'treeview'),
+                    'visible'=>Yii::app()->user->checkAccess('admin'),
                 ),
                 array(
                     'label'=>'<i class="fa fa-wrench"></i><span>Konfigurasi Sistem</span><i class="fa fa-angle-left pull-right"></i>',
