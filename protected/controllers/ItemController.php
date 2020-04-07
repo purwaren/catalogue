@@ -230,8 +230,11 @@ class ItemController extends Controller
         $this->layout='//layouts/shop';
 
         $model = $this->loadModel($id);
+        $user = Users::model()->findByAttributes(array('username'=>$model->created_by));
+        $store = StoresCustom::model()->findByPk($user->store_id);
         $this->render('detail',array(
-            'model'=>$model
+            'model'=>$model,
+            'store'=>$store
         ));
     }
 }

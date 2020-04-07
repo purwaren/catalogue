@@ -36,6 +36,7 @@ class UserIdentity extends CUserIdentity
 				$this->errorCode = self::ERROR_NONE;
 				//set session variable
 				$this->setState('fullname', $user->name);
+				$this->setState('store_id', $user->store_id);
 			}
 			$user->last_login_attempt = new CDbExpression('NOW()');
 		}

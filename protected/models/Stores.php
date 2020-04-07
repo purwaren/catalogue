@@ -14,6 +14,8 @@
  * @property string $created_by
  * @property string $created_at
  * @property string $area
+ * @property string $phone
+ * @property string $ig_account
  */
 class Stores extends CActiveRecord
 {
@@ -35,12 +37,12 @@ class Stores extends CActiveRecord
 		return array(
 			array('code, name, alias, address, flag_delete', 'required'),
 			array('flag_delete', 'numerical', 'integerOnly'=>true),
-			array('code, name, alias, address, supervisor_id', 'length', 'max'=>128),
-			array('created_by, area', 'length', 'max'=>32),
+			array('code, name, alias, address, supervisor_id, ig_account', 'length', 'max'=>128),
+			array('created_by, area, phone', 'length', 'max'=>32),
 			array('created_at', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, code, name, alias, address, supervisor_id, flag_delete, created_by, created_at, area', 'safe', 'on'=>'search'),
+			array('id, code, name, alias, address, supervisor_id, flag_delete, created_by, created_at, area, phone, ig_account', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,6 +73,8 @@ class Stores extends CActiveRecord
 			'created_by' => 'Created By',
 			'created_at' => 'Created At',
 			'area' => 'Area',
+			'phone' => 'Phone',
+			'ig_account' => 'Ig Account',
 		);
 	}
 
@@ -102,6 +106,8 @@ class Stores extends CActiveRecord
 		$criteria->compare('created_by',$this->created_by,true);
 		$criteria->compare('created_at',$this->created_at,true);
 		$criteria->compare('area',$this->area,true);
+		$criteria->compare('phone',$this->phone,true);
+		$criteria->compare('ig_account',$this->ig_account,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

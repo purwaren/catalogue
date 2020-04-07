@@ -2,6 +2,7 @@
 /**
  * @var $this ItemController
  * @var $model ItemCustom
+ * @var $store StoresCustom
  */
 
 $thumbs = $model->getAllThumbImage();
@@ -12,6 +13,8 @@ $images = $model->getAllBigImage();
 if (empty($images)) {
     $images[] = 'https://via.placeholder.com/540';
 }
+$param = ('phone='.$store->phone.'&text=Assalamualaikum kak, apakah item'.$model->name.'('.$model->item_code.') ready ?');
+$whatsapp = 'https://api.whatsapp.com/send?'.$param;
 
 ?>
 <div id="content">
@@ -66,6 +69,37 @@ if (empty($images)) {
                 </div>
                 <div id="details" class="box mb-4 mt-4">
                     <?php echo $model->description ?>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h3 class="text-center text-uppercase">Koleksi <?php echo $store->name ?></h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-simple">
+                            <div class="icon-outlined"><i class="fa fa-map-marker"></i></div>
+                            <h3 class="h4">Alamat</h3>
+                            <p><?php echo $store->address ?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-simple">
+                            <div class="icon-outlined"><a href="<?php echo $whatsapp ?>" target="_blank"><i class="fa fa-whatsapp"></i></a></div>
+                            <h3 class="h4">Kontak</h3>
+                            <p>
+                                Whatsapp: <?php echo $store->phone ?> <br>
+                                Telepon: <?php echo $store->phone ?> <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-simple">
+                            <div class="icon-outlined"><a href="https://instagram.com/<?php echo substr($store->ig_account,1) ?>" target="_blank"><i class="fa fa-instagram"></i></a> </div>
+                            <h3 class="h4">Social Media</h3>
+                            <p>
+                                Instagram: <?php echo $store->ig_account ?>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div id="product-social" class="box social text-center mb-5 mt-5">
                     <h4 class="heading-light">Show it to your friends</h4>

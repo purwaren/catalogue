@@ -34,17 +34,15 @@ class StoresCustom extends Stores {
      */
     public function rules()
     {
-        // NOTE: you should only define rules for those attributes that
-        // will receive user inputs.
         return array(
             array('code, name, alias, address, flag_delete', 'required'),
             array('flag_delete', 'numerical', 'integerOnly'=>true),
-            array('code, name, alias, address, supervisor_id', 'length', 'max'=>128),
-            array('created_by, area', 'length', 'max'=>32),
-            array('created_at, offer_id', 'safe'),
+            array('code, name, alias, address, supervisor_id, ig_account', 'length', 'max'=>128),
+            array('created_by, area, phone', 'length', 'max'=>32),
+            array('created_at', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, code, name, alias, address, supervisor_id, flag_delete, created_by, created_at, area, offer_id', 'safe', 'on'=>'search'),
+            array('id, code, name, alias, address, supervisor_id, flag_delete, created_by, created_at, area, phone, ig_account', 'safe', 'on'=>'search'),
         );
     }
 
@@ -64,29 +62,7 @@ class StoresCustom extends Stores {
         ));
     }
 
-    public function searchForKabag() {
-        $criteria = new CDbCriteria();
-        $criteria->compare('area', Yii::app()->user->area);
-        $criteria->compare('flag_delete', EFlag::FLAG_INACTIVE);
-        return new CActiveDataProvider($this, array(
-            'criteria'=>$criteria
-        ));
-    }
 
-    public function searchForKabagDetail() {
-        $criteria = new CDbCriteria();
-        //$criteria->compare('area', Yii::app()->user->area);
-        $criteria->compare('flag_delete', EFlag::FLAG_INACTIVE);
-        return new CActiveDataProvider($this, array(
-            'criteria'=>$criteria,
-            'sort'=>array(
-                'defaultOrder'=>'area ASC'
-            ),
-            'pagination'=>array(
-                'pageSize'=>50
-            ),
-        ));
-    }
 
     /**
      * Returns the static model of the specified AR class.
