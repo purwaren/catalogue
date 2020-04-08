@@ -108,5 +108,14 @@
     <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
     <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/js/front.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163132098-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163132098-1');
+    </script>
+
   </body>
 </html>
