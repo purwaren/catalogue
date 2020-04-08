@@ -102,6 +102,7 @@ $stores = StoresItemCustom::model()->findAllByAttributes(array('item_id'=>$model
                         </div>
                     </div>
                 </div>
+                <?php if (count($stores) > 0) { ?>
                 <div class="row text-center">
                     <div class="col-md-12">
                         <h3>TERSEDIA JUGA DI TOKO BERIKUT</h3>
@@ -133,6 +134,7 @@ $stores = StoresItemCustom::model()->findAllByAttributes(array('item_id'=>$model
                     </div>
                     <?php } ?>
                 </div>
+                <?php } ?>
                 <div id="product-social" class="box social text-center mb-5 mt-5">
                     <h4 class="heading-light">Show it to your friends</h4>
                     <ul class="social list-inline">
