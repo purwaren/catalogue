@@ -15,6 +15,21 @@ if (!empty($image)) {
     $imageUrl = $image;
 }
 
+Yii::app()->clientScript->registerScript('sdf',"
+    $('#itemSale').click(function(event){
+        $(this).html('<i class=\"fa fa-repeat fa-spin\"></i>')
+        if (!confirm('Anda yakin barang ini tersedia ?'))
+            return false;
+        ".CHtml::ajax(array(
+            'url'=>Yii::app()->createUrl('item/join',array('id'=>$model->id)),
+            'type'=>'POST',
+            'success'=>"function(resp) {
+                $('#itemSale').hide();
+            }",
+        ))."
+    });
+",CClientScript::POS_END);
+
 ?>
 
 <!-- Main content -->
@@ -34,6 +49,7 @@ if (!empty($image)) {
 					'data'=>$model,
 					'attributes'=>array(
                         'id',
+                        'item_code',
                         'name',
                         'description',
                         'price',
@@ -58,6 +74,9 @@ if (!empty($image)) {
 		<div class="box-footer">
 			<?php echo CHtml::link('Kembali',array('item/admin'),array('class'=>'btn btn-primary'))?>
             <?php echo CHtml::link('Ubah',array('item/update','id'=>$model->id),array('class'=>'btn btn-warning'))?>
+            <?php if($model->created_by != Yii::app()->user->getName() && !StoresItemCustom::isSelling(Yii::app()->user->store_id, $model->id)) { ?>
+            <button class="btn btn-info" id="itemSale">Ikut Menjual</button>
+            <?php } ?>
 		</div><!-- /.box-footer-->
 	</div><!-- /.box -->
 </section><!-- /.content -->

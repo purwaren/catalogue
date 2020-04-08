@@ -28,7 +28,7 @@ class ItemController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','create','update','admin','delete','upload', 'create', 'deleteImage'),
+				'actions'=>array('index','view','create','update','admin','delete','upload', 'create', 'deleteImage','join'),
 				'users'=>array('@'),
 			),
 			array('allow',
@@ -85,11 +85,13 @@ class ItemController extends Controller
 	public function actionUpdate($id)
 	{
 		$item=$this->loadModel($id);
+
+		if ($item->created_by != Yii::app()->user->getName() && !StoresItemCustom::isSelling(Yii::app()->user->store_id, $item->id)) {
+		    throw new CHttpException(403, 'Anda tidak punya izin untuk mengakses data ini');
+        }
+
 		$model = new ItemForm();
 		$model->attributes = $item->attributes;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['ItemForm']))
 		{
@@ -140,6 +142,7 @@ class ItemController extends Controller
 		if(isset($_GET['ItemCustom']))
 			$model->attributes=$_GET['ItemCustom'];
 
+		$model->created_by = Yii::app()->user->getName();
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -236,5 +239,22 @@ class ItemController extends Controller
             'model'=>$model,
             'store'=>$store
         ));
+    }
+
+    /**
+     * @param $id
+     * @return string
+     */
+    public function actionJoin($id) {
+        if (Yii::app()->request->isAjaxRequest && Yii::app()->request->isPostRequest) {
+            $item = ItemCustom::model()->findByPk($id);
+            $sale = new StoresItem();
+            $sale->item_id = $item->id;
+            $sale->store_id = Yii::app()->user->store_id;
+            if ($sale->save()) {
+                return CJSON::encode($sale->attributes);
+            }
+            else echo CJSON::encode($sale->getErrors());
+        }
     }
 }

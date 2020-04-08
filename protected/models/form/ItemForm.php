@@ -16,8 +16,19 @@ class ItemForm extends CFormModel
     {
         return array(
             array('item_code, name, description, cat_code, price, qty_stock', 'required'),
+            array('item_code', 'alreadyUploaded'),
             array('sup_code, id', 'safe')
         );
+    }
+
+    public function alreadyUploaded() {
+        if (!$this->hasErrors() && empty($this->id)) {
+            $item = ItemCustom::model()->findByAttributes(array('item_code'=>$this->item_code));
+            if (!empty($item)) {
+                $this->addError('item_code', 'Barang ini sudah ada, <a href="'.Yii::app()->createUrl('item/view',array('id'=>$item->id)).'" class="btn btn-xs btn-danger">Klik ini jika barang tersedia di toko Anda</a>');
+            }
+        }
+
     }
 
     public function attributeLabels()
@@ -65,9 +76,6 @@ class ItemForm extends CFormModel
                 }
             }
 
-        }
-        else {
-            var_dump($this->getErrors());
         }
     }
 }

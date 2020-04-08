@@ -13,9 +13,10 @@ $images = $model->getAllBigImage();
 if (empty($images)) {
     $images[] = 'https://via.placeholder.com/540';
 }
-$param = ('phone='.$store->phone.'&text=Assalamualaikum kak, apakah item'.$model->name.'('.$model->item_code.') ready ?');
+$param = ('phone='.$store->phone.'&text=Assalamualaikum kak, apakah item '.$model->name.'('.$model->item_code.') ready ?');
 $whatsapp = 'https://api.whatsapp.com/send?'.$param;
 
+$stores = StoresItemCustom::model()->findAllByAttributes(array('item_id'=>$model->id));
 ?>
 <div id="content">
     <div class="container">
@@ -100,6 +101,37 @@ $whatsapp = 'https://api.whatsapp.com/send?'.$param;
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h3>TERSEDIA JUGA DI TOKO BERIKUT</h3>
+                    </div>
+                    <?php
+                        $cssClass = 'col-md-3';
+                        if (count($stores) == 1) {
+                            $cssClass = 'col-md-12';
+                        }
+                        else if (count($stores) == 2) {
+                            $cssClass = 'col-md-6';
+                        }
+                        else if (count($stores) == 3) {
+                            $cssClass = 'col-md-4';
+                        }
+                        foreach ($stores as $row) {
+                            $param = ('phone='.$row->store->phone.'&text=Assalamualaikum kak, apakah item '.$model->name.'('.$model->item_code.') ready ?');
+                            $wa = 'https://api.whatsapp.com/send?'.$param;
+                    ?>
+                    <div class="<?php echo $cssClass ?>">
+                        <div class="box-simple">
+                            <div class="icon-outlined"><a href="<?php echo $wa ?>" target="_blank"><i class="fa fa-whatsapp"></i></a></div>
+                            <h3 class="h4"><?php echo $row->store->name ?></h3>
+                            <p>
+                                Whatsapp: <?php echo $row->store->phone ?> <br>
+                                Telepon: <?php echo $row->store->phone ?> <br>
+                            </p>
+                        </div>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div id="product-social" class="box social text-center mb-5 mt-5">
                     <h4 class="heading-light">Show it to your friends</h4>
