@@ -100,7 +100,7 @@ class ItemCustom extends Item
             $img = array();
             foreach ($images as $row) {
                 $cache = Yii::app()->iwi->load($row->location);
-                $img[] = Yii::app()->baseUrl.'/'.$cache->adaptive(540,800)->cache();
+                $img[] = Yii::app()->baseUrl.'/'.$cache->adaptive(800,800)->cache();
             }
             return $img;
         }
