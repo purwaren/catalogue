@@ -28,6 +28,7 @@
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/html5shiv.min.js"></script>
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/respond.min.js"></script>
     <![endif]-->
+      <script data-ad-client="ca-pub-6718804203786731" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <!-- Site wrapper -->
