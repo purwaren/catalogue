@@ -7,6 +7,7 @@
     <meta name="description" content="Online shop for Mode Fashion, ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+      <meta name="keywords" content="online shop, mode, fashion, baju gamis, baju anak, baju murah, belanja rumah, belanja murah">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/assets2/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
